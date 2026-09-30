@@ -172,7 +172,7 @@
 
 <rect x="46"
       y="34"
-      width="345"
+      width="365"
       height="28"
       rx="14"
       fill="#59C3C3"
@@ -199,7 +199,7 @@
       font-weight="800"
       letter-spacing="1.8"
       fill="#BDEEEE">
-  MACHINE LEARNING • TREE MODELS
+  MACHINE LEARNING • KERNEL METHODS
 </text>
 
 
@@ -210,171 +210,139 @@
       font-size="34"
       font-weight="900"
       fill="#FFFFFF">
-  PART E :
+  PART F :
 </text>
 
 <text x="46"
       y="153"
-      font-size="29"
+      font-size="30"
       font-weight="900"
       fill="#FFFFFF">
-  TREE-BASED
+  SUPPORT VECTOR
 </text>
 
 <text x="46"
       y="191"
-      font-size="31"
+      font-size="34"
       font-weight="900"
       fill="#59C3C3">
   REGRESSION
 </text>
 
-<text x="46"
-      y="229"
-      font-size="31"
-      font-weight="900"
-      fill="#FFFFFF">
-  MODELS
-</text>
-
 <text x="48"
-      y="254"
+      y="220"
       font-size="10"
       letter-spacing="1.2"
       fill="#B7C6D9">
-  DECISION TREE • RANDOM FOREST • SPLITS • ENSEMBLE
+  SVR • ε-TUBE • KERNELS • SUPPORT VECTORS
 </text>
 
 </g>
 
 
 <!-- ================================================= -->
-<!-- TREE STRUCTURE VISUAL -->
+<!-- SVR TUBE VISUAL -->
 <!-- ================================================= -->
 
-<g transform="translate(150 338)">
+<g transform="translate(55 285)">
 
-  <!-- TREE CONNECTIONS -->
+  <!-- TUBE -->
 
-  <g fill="none"
-     stroke="#59C3C3"
-     stroke-width="2"
-     stroke-linecap="round">
-
-    <path d="M0 -55 L-58 -18"/>
-    <path d="M0 -55 L58 -18"/>
-
-    <path d="M-58 -18 L-86 20"/>
-    <path d="M-58 -18 L-30 20"/>
-
-    <path d="M58 -18 L30 20"/>
-    <path d="M58 -18 L86 20"/>
-
-  </g>
-
-
-  <!-- ROOT -->
-
-  <rect x="-26"
-        y="-78"
-        width="52"
-        height="28"
-        rx="7"
-        fill="#59C3C3"
-        filter="url(#softGlow)"/>
-
-  <text x="0"
-        y="-60"
-        text-anchor="middle"
-        font-family="Arial"
-        font-size="9"
-        font-weight="900"
-        fill="#0B132B">
-    ROOT
-  </text>
-
-
-  <!-- LEVEL 1 -->
-
-  <rect x="-84"
-        y="-32"
-        width="52"
-        height="28"
-        rx="7"
-        fill="#3B5875"
+  <path d="M0 35
+           C55 8 110 55 165 20
+           C215 -8 270 32 330 0"
+        fill="none"
         stroke="#59C3C3"
-        stroke-opacity=".5"/>
+        stroke-opacity=".20"
+        stroke-width="42"
+        stroke-linecap="round"/>
 
-  <text x="-58"
-        y="-14"
-        text-anchor="middle"
-        font-family="Arial"
-        font-size="8"
-        font-weight="800"
-        fill="#FFFFFF">
-    X₁
-  </text>
-
-
-  <rect x="32"
-        y="-32"
-        width="52"
-        height="28"
-        rx="7"
-        fill="#3B5875"
+  <path d="M0 35
+           C55 8 110 55 165 20
+           C215 -8 270 32 330 0"
+        fill="none"
         stroke="#59C3C3"
-        stroke-opacity=".5"/>
-
-  <text x="58"
-        y="-14"
-        text-anchor="middle"
-        font-family="Arial"
-        font-size="8"
-        font-weight="800"
-        fill="#FFFFFF">
-    X₂
-  </text>
+        stroke-opacity=".28"
+        stroke-width="2"
+        stroke-dasharray="7 7"/>
 
 
-  <!-- LEAVES -->
+  <!-- REGRESSION LINE -->
 
-  <g fill="#1C2948"
-     stroke="#59C3C3"
+  <path d="M0 35
+           C55 8 110 55 165 20
+           C215 -8 270 32 330 0"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="3"
+        stroke-linecap="round"/>
+
+
+  <!-- SUPPORT VECTORS -->
+
+  <g fill="#59C3C3"
+     stroke="#FFFFFF"
      stroke-width="1.5">
 
-    <circle cx="-86" cy="34" r="13"/>
-    <circle cx="-30" cy="34" r="13"/>
-    <circle cx="30" cy="34" r="13"/>
-    <circle cx="86" cy="34" r="13"/>
+    <circle cx="48" cy="22" r="6"/>
+    <circle cx="108" cy="49" r="6"/>
+    <circle cx="166" cy="20" r="6"/>
+    <circle cx="245" cy="21" r="6"/>
+    <circle cx="304" cy="10" r="6"/>
 
   </g>
 
 
-  <g font-family="Arial"
-     font-size="7"
-     font-weight="800"
-     fill="#BDEEEE"
-     text-anchor="middle">
+  <!-- OUTLIER -->
 
-    <text x="-86" y="37">Y₁</text>
-    <text x="-30" y="37">Y₂</text>
-    <text x="30" y="37">Y₃</text>
-    <text x="86" y="37">Y₄</text>
-
-  </g>
-
-
-  <!-- ANIMATED DATA FLOW -->
-
-  <circle cx="0"
-          cy="-55"
+  <circle cx="135"
+          cy="-22"
           r="5"
+          fill="#FFFFFF"
+          stroke="#59C3C3"
+          stroke-width="2"/>
+
+  <line x1="135"
+        y1="-17"
+        x2="145"
+        y2="2"
+        stroke="#59C3C3"
+        stroke-width="1"
+        stroke-dasharray="3 3"/>
+
+
+  <!-- EPSILON LABEL -->
+
+  <line x1="215"
+        y1="-17"
+        x2="215"
+        y2="25"
+        stroke="#59C3C3"
+        stroke-width="1.5"
+        stroke-dasharray="4 4"/>
+
+  <text x="224"
+        y="7"
+        font-family="Arial"
+        font-size="9"
+        font-weight="800"
+        fill="#BDEEEE">
+    ε-TUBE
+  </text>
+
+
+  <!-- ANIMATED SUPPORT VECTOR -->
+
+  <circle cx="48"
+          cy="22"
+          r="4"
           fill="#FFFFFF"
           filter="url(#glow)">
 
-    <animateMotion
-      path="M0 0 L-58 37 L-86 92"
-      dur="3s"
+    <animate
+      attributeName="cx"
+      values="48;108;166;245;304;48"
+      dur="6s"
       repeatCount="indefinite"/>
 
   </circle>
@@ -394,28 +362,28 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  01 SPLIT
+  01 MAP
 </text>
 
-<text x="125"
+<text x="112"
       y="424"
       font-size="8.5"
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  02 BRANCH
+  02 FIT
 </text>
 
-<text x="218"
+<text x="170"
       y="424"
       font-size="8.5"
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  03 LEAF
+  03 MARGIN
 </text>
 
-<text x="285"
+<text x="253"
       y="424"
       font-size="8.5"
       font-weight="800"
@@ -452,7 +420,7 @@
       font-size="8.5"
       letter-spacing="1.05"
       fill="#71849D">
-  NON-LINEAR PATTERNS • FEATURE SPLITS • ENSEMBLE LEARNING
+  NON-LINEAR FIT • ε-INSENSITIVE LOSS • KERNEL LEARNING
 </text>
 
 </g>
@@ -570,11 +538,11 @@
       font-weight="800"
       letter-spacing="1.4"
       fill="#FFFFFF">
-  TREE REGRESSION ENGINE
+  SUPPORT VECTOR REGRESSION ENGINE
 </text>
 
 
-<!-- ACTIVE -->
+<!-- STATUS -->
 
 <rect x="1010"
       y="58"
@@ -605,7 +573,7 @@
       font-size="8"
       font-weight="800"
       fill="#BDEEEE">
-  TRAINED
+  OPTIMIZED
 </text>
 
 
@@ -631,7 +599,7 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  TREE DEPTH
+  SUPPORT VECTORS
 </text>
 
 <text x="490"
@@ -639,7 +607,7 @@
       font-size="29"
       font-weight="900"
       fill="#FFFFFF">
-  05
+  18
 </text>
 
 <text x="555"
@@ -647,7 +615,7 @@
       font-size="9"
       font-weight="800"
       fill="#59C3C3">
-  LEVELS
+  POINTS
 </text>
 
 <rect x="490"
@@ -660,14 +628,14 @@
 
 <rect x="490"
       y="191"
-      width="110"
+      width="108"
       height="4"
       rx="2"
       fill="#59C3C3">
 
   <animate
     attributeName="width"
-    values="45;125;110"
+    values="40;128;108"
     dur="5s"
     repeatCount="indefinite"/>
 
@@ -694,7 +662,7 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  FEATURES
+  EPSILON
 </text>
 
 <text x="707"
@@ -702,21 +670,21 @@
       font-size="29"
       font-weight="900"
       fill="#FFFFFF">
-  05
+  0.10
 </text>
 
-<text x="777"
+<text x="800"
       y="181"
       font-size="9"
       font-weight="800"
       fill="#59C3C3">
-  INPUTS
+  ε-TUBE
 </text>
 
 <path d="M707 193
-         L735 181
-         L765 188
-         L797 168
+         L735 180
+         L765 187
+         L797 169
          L830 178
          L852 163"
       fill="none"
@@ -752,7 +720,7 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#0B132B">
-  MODEL ACCURACY
+  MODEL SCORE
 </text>
 
 <text x="924"
@@ -760,7 +728,7 @@
       font-size="29"
       font-weight="900"
       fill="#0B132B">
-  93.8%
+  92.6%
 </text>
 
 <text x="1022"
@@ -800,7 +768,7 @@
 
 
 <!-- ================================================= -->
-<!-- TREE SPLIT PERFORMANCE -->
+<!-- SVR FIT PERFORMANCE -->
 <!-- ================================================= -->
 
 <rect x="470"
@@ -819,7 +787,7 @@
       font-weight="800"
       letter-spacing="1.3"
       fill="#FFFFFF">
-  TREE SPLIT PERFORMANCE
+  SVR FIT PERFORMANCE
 </text>
 
 <text x="492"
@@ -827,7 +795,7 @@
       font-family="Arial"
       font-size="8"
       fill="#71849D">
-  FEATURE IMPORTANCE ACROSS TREE LEVELS
+  ε-INSENSITIVE REGRESSION TUBE
 </text>
 
 
@@ -859,82 +827,64 @@
 </g>
 
 
-<!-- IMPORTANCE BARS -->
+<!-- EPSILON TUBE -->
 
-<g fill="#3B5875">
+<path d="M510 365
+         C555 345 595 350 635 330
+         C680 307 718 320 758 300
+         C798 281 832 292 855 277"
 
-  <rect x="510"
-        y="306"
-        width="42"
-        height="98"
-        rx="5">
-    <animate attributeName="height"
-             values="60;98;82;98"
-             dur="4s"
-             repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="575"
-        y="327"
-        width="42"
-        height="77"
-        rx="5">
-    <animate attributeName="height"
-             values="50;77;65;77"
-             dur="4.5s"
-             repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="640"
-        y="342"
-        width="42"
-        height="62"
-        rx="5">
-    <animate attributeName="height"
-             values="42;62;54;62"
-             dur="4.2s"
-             repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="705"
-        y="358"
-        width="42"
-        height="46"
-        rx="5">
-    <animate attributeName="height"
-             values="32;46;39;46"
-             dur="4.7s"
-             repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="770"
-        y="373"
-        width="42"
-        height="31"
-        rx="5">
-    <animate attributeName="height"
-             values="22;31;27;31"
-             dur="4.4s"
-             repeatCount="indefinite"/>
-  </rect>
-
-</g>
-
-
-<!-- IMPORTANCE LINE -->
-
-<path d="M531 288
-         C580 300 620 312 661 323
-         C700 334 746 347 791 357"
       fill="none"
       stroke="#59C3C3"
-      stroke-width="3.5"
+      stroke-opacity=".17"
+      stroke-width="36"
+      stroke-linecap="round"/>
+
+
+<!-- UPPER BOUND -->
+
+<path d="M510 347
+         C555 327 595 332 635 312
+         C680 289 718 302 758 282
+         C798 263 832 274 855 259"
+
+      fill="none"
+      stroke="#59C3C3"
+      stroke-width="1.5"
+      stroke-dasharray="5 5"
+      opacity=".75"/>
+
+
+<!-- LOWER BOUND -->
+
+<path d="M510 383
+         C555 363 595 368 635 348
+         C680 325 718 338 758 318
+         C798 299 832 310 855 295"
+
+      fill="none"
+      stroke="#59C3C3"
+      stroke-width="1.5"
+      stroke-dasharray="5 5"
+      opacity=".75"/>
+
+
+<!-- REGRESSION LINE -->
+
+<path d="M510 365
+         C555 345 595 350 635 330
+         C680 307 718 320 758 300
+         C798 281 832 292 855 277"
+
+      fill="none"
+      stroke="#FFFFFF"
+      stroke-width="3"
       stroke-linecap="round"
-      stroke-dasharray="0 400">
+      stroke-dasharray="0 420">
 
   <animate
     attributeName="stroke-dasharray"
-    values="0 400;400 0"
+    values="0 420;420 0"
     dur="6s"
     repeatCount="indefinite"/>
 
@@ -947,34 +897,62 @@
    stroke="#59C3C3"
    stroke-width="2">
 
-  <circle cx="531" cy="288" r="4"/>
-  <circle cx="596" cy="302" r="4"/>
-  <circle cx="661" cy="323" r="4"/>
-  <circle cx="726" cy="340" r="4"/>
-  <circle cx="791" cy="357" r="4"/>
+  <circle cx="530" cy="355" r="4"/>
+  <circle cx="570" cy="340" r="4"/>
+  <circle cx="620" cy="345" r="4"/>
+  <circle cx="672" cy="313" r="4"/>
+  <circle cx="720" cy="325" r="4"/>
+  <circle cx="775" cy="288" r="4"/>
+  <circle cx="830" cy="302" r="4"/>
 
 </g>
 
 
-<!-- FEATURE LABELS -->
+<!-- SUPPORT VECTOR HIGHLIGHTS -->
 
-<g font-family="Arial"
-   font-size="7"
-   font-weight="700"
-   fill="#71849D"
-   text-anchor="middle">
+<g fill="#59C3C3">
 
-  <text x="531" y="417">AREA</text>
-  <text x="596" y="417">ROOMS</text>
-  <text x="661" y="417">AGE</text>
-  <text x="726" y="417">SCORE</text>
-  <text x="791" y="417">ZONE</text>
+  <circle cx="570" cy="340" r="6">
+    <animate
+      attributeName="r"
+      values="4;7;4"
+      dur="2.5s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="672" cy="313" r="6">
+    <animate
+      attributeName="r"
+      values="4;7;4"
+      dur="3s"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="775" cy="288" r="6">
+    <animate
+      attributeName="r"
+      values="4;7;4"
+      dur="2.7s"
+      repeatCount="indefinite"/>
+  </circle>
 
 </g>
+
+
+<!-- LABEL -->
+
+<text x="788"
+      y="395"
+      font-family="Arial"
+      font-size="7"
+      font-weight="800"
+      fill="#59C3C3">
+  ε-MARGIN
+</text>
 
 
 <!-- ================================================= -->
-<!-- MODEL TYPES -->
+<!-- SVR CONFIGURATION -->
 <!-- ================================================= -->
 
 <rect x="906"
@@ -994,13 +972,11 @@
       font-weight="800"
       letter-spacing="1.3"
       fill="#FFFFFF">
-  TREE MODELS
+  SVR CONFIGURATION
 </text>
 
 
-<!-- DECISION TREE -->
-
-<g font-family="Arial">
+<!-- KERNEL -->
 
 <circle cx="936"
         cy="282"
@@ -1009,23 +985,25 @@
 
 <text x="950"
       y="286"
+      font-family="Arial"
       font-size="8"
       font-weight="700"
       fill="#FFFFFF">
-  DECISION TREE
+  KERNEL
 </text>
 
 <text x="1090"
       y="286"
       text-anchor="end"
+      font-family="Arial"
       font-size="8"
       font-weight="800"
       fill="#59C3C3">
-  SINGLE TREE
+  RBF
 </text>
 
 
-<!-- RANDOM FOREST -->
+<!-- C -->
 
 <circle cx="936"
         cy="316"
@@ -1034,23 +1012,25 @@
 
 <text x="950"
       y="320"
+      font-family="Arial"
       font-size="8"
       font-weight="700"
       fill="#FFFFFF">
-  RANDOM FOREST
+  REGULARIZATION
 </text>
 
 <text x="1090"
       y="320"
       text-anchor="end"
+      font-family="Arial"
       font-size="8"
       font-weight="800"
       fill="#59C3C3">
-  ENSEMBLE
+  C = 10
 </text>
 
 
-<!-- SPLIT -->
+<!-- EPSILON -->
 
 <circle cx="936"
         cy="350"
@@ -1059,23 +1039,25 @@
 
 <text x="950"
       y="354"
+      font-family="Arial"
       font-size="8"
       font-weight="700"
       fill="#FFFFFF">
-  SPLITTING
+  EPSILON
 </text>
 
 <text x="1090"
       y="354"
       text-anchor="end"
+      font-family="Arial"
       font-size="8"
       font-weight="800"
       fill="#59C3C3">
-  MSE / MAE
+  ε = 0.10
 </text>
 
 
-<!-- OOB -->
+<!-- SUPPORT -->
 
 <circle cx="936"
         cy="384"
@@ -1084,22 +1066,22 @@
 
 <text x="950"
       y="388"
+      font-family="Arial"
       font-size="8"
       font-weight="700"
       fill="#FFFFFF">
-  OOB ESTIMATE
+  SUPPORT VECTORS
 </text>
 
 <text x="1090"
       y="388"
       text-anchor="end"
+      font-family="Arial"
       font-size="8"
       font-weight="800"
       fill="#59C3C3">
-  GENERALIZATION
+  ACTIVE
 </text>
-
-</g>
 
 
 <!-- PROGRESS -->
@@ -1167,11 +1149,13 @@
       font-weight="700"
       letter-spacing="1.8"
       fill="#8EA1BB">
-  DECISION TREE • RANDOM FOREST • FEATURE SPLITS • OOB • ENSEMBLE REGRESSION
+  SUPPORT VECTOR REGRESSION • ε-TUBE • KERNEL • RBF • REGULARIZATION
 </text>
 
 
+<!-- ================================================= -->
 <!-- ROTATING SQUARE -->
+<!-- ================================================= -->
 
 <rect x="1160"
       y="150"
