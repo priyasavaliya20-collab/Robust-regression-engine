@@ -1,4 +1,6 @@
-# 🏠 Robust Regression Engine — House Price Prediction
+
+
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/0fda5840-79b3-463e-80a5-62bfa432bc29" />
 
 ## 🎯 Objective
 
