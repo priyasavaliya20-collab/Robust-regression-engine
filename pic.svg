@@ -5,137 +5,89 @@
 
 <defs>
 
-  <!-- ========================= -->
   <!-- BACKGROUND -->
-  <!-- ========================= -->
-
   <linearGradient id="bg"
                   x1="0" y1="0"
                   x2="1" y2="1">
-
     <stop offset="0%" stop-color="#0B132B"/>
     <stop offset="48%" stop-color="#1C2948"/>
     <stop offset="100%" stop-color="#3B5875"/>
-
   </linearGradient>
 
-
-  <!-- ========================= -->
-  <!-- TURQUOISE -->
-  <!-- ========================= -->
-
+  <!-- CYAN -->
   <linearGradient id="cyan"
                   x1="0" y1="0"
                   x2="1" y2="1">
-
     <stop offset="0%" stop-color="#59C3C3"/>
     <stop offset="100%" stop-color="#3B9FA6"/>
-
   </linearGradient>
 
-
-  <!-- ========================= -->
   <!-- GLASS -->
-  <!-- ========================= -->
-
   <linearGradient id="glass"
                   x1="0" y1="0"
                   x2="0" y2="1">
-
     <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
     <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".035"/>
-
   </linearGradient>
 
-
-  <!-- ========================= -->
   <!-- GRID -->
-  <!-- ========================= -->
-
   <pattern id="grid"
            width="28"
            height="28"
            patternUnits="userSpaceOnUse">
-
     <path d="M28 0H0V28"
           fill="none"
           stroke="#59C3C3"
           stroke-opacity=".08"/>
-
   </pattern>
 
-
-  <!-- ========================= -->
   <!-- SHADOW -->
-  <!-- ========================= -->
-
   <filter id="shadow"
           x="-30%"
           y="-30%"
           width="160%"
           height="180%">
-
     <feDropShadow
       dx="0"
       dy="18"
       stdDeviation="18"
       flood-color="#000"
       flood-opacity=".32"/>
-
   </filter>
 
-
-  <!-- ========================= -->
   <!-- GLOW -->
-  <!-- ========================= -->
-
   <filter id="glow"
           x="-100%"
           y="-100%"
           width="300%"
           height="300%">
-
     <feGaussianBlur
       stdDeviation="7"
       result="blur"/>
-
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
-
   </filter>
-
 
   <filter id="softGlow"
           x="-100%"
           y="-100%"
           width="300%"
           height="300%">
-
     <feGaussianBlur
       stdDeviation="2.5"
       result="blur"/>
-
     <feMerge>
       <feMergeNode in="blur"/>
       <feMergeNode in="SourceGraphic"/>
     </feMerge>
-
   </filter>
 
-
-  <!-- ========================= -->
-  <!-- CLIP -->
-  <!-- ========================= -->
-
   <clipPath id="clip">
-
-    <rect
-      width="1200"
-      height="500"
-      rx="24"/>
-
+    <rect width="1200"
+          height="500"
+          rx="24"/>
   </clipPath>
 
 </defs>
@@ -148,70 +100,57 @@
 <!-- BACKGROUND -->
 <!-- ================================================= -->
 
-<rect
-  width="1200"
-  height="500"
-  fill="url(#bg)"/>
+<rect width="1200"
+      height="500"
+      fill="url(#bg)"/>
 
-
-<rect
-  x="430"
-  y="0"
-  width="770"
-  height="500"
-  fill="url(#grid)"/>
+<rect x="430"
+      y="0"
+      width="770"
+      height="500"
+      fill="url(#grid)"/>
 
 
 <!-- ================================================= -->
-<!-- ABSTRACT LEFT PANELS -->
+<!-- ABSTRACT PANELS -->
 <!-- ================================================= -->
 
-<path
-  d="M0 0
-     H210
-     L410 500
-     H0Z"
-  fill="#0B132B"/>
+<path d="M0 0
+         H210
+         L410 500
+         H0Z"
+      fill="#0B132B"/>
+
+<path d="M210 0
+         H365
+         L535 500
+         H410Z"
+      fill="#1C2948"
+      opacity=".94"/>
+
+<path d="M365 0
+         H520
+         L650 500
+         H535Z"
+      fill="#3B5875"
+      opacity=".82"/>
+
+<path d="M520 0
+         H1200
+         V500
+         H650Z"
+      fill="#59C3C3"
+      opacity=".16"/>
 
 
-<path
-  d="M210 0
-     H365
-     L535 500
-     H410Z"
-  fill="#1C2948"
-  opacity=".94"/>
+<!-- MOVING LIGHT -->
 
-
-<path
-  d="M365 0
-     H520
-     L650 500
-     H535Z"
-  fill="#3B5875"
-  opacity=".82"/>
-
-
-<path
-  d="M520 0
-     H1200
-     V500
-     H650Z"
-  fill="#59C3C3"
-  opacity=".16"/>
-
-
-<!-- ================================================= -->
-<!-- SLOW MOVING LIGHT -->
-<!-- ================================================= -->
-
-<path
-  d="M820 -100
-     L900 -100
-     L610 600
-     L530 600Z"
-  fill="#59C3C3"
-  opacity=".045">
+<path d="M820 -100
+         L900 -100
+         L610 600
+         L530 600Z"
+      fill="#59C3C3"
+      opacity=".045">
 
   <animateTransform
     attributeName="transform"
@@ -229,24 +168,20 @@
 
 <g font-family="Arial, sans-serif">
 
+<rect x="46"
+      y="34"
+      width="310"
+      height="28"
+      rx="14"
+      fill="#59C3C3"
+      fill-opacity=".12"
+      stroke="#59C3C3"
+      stroke-opacity=".45"/>
 
-<rect
-  x="46"
-  y="34"
-  width="238"
-  height="28"
-  rx="14"
-  fill="#59C3C3"
-  fill-opacity=".12"
-  stroke="#59C3C3"
-  stroke-opacity=".45"/>
-
-
-<circle
-  cx="63"
-  cy="48"
-  r="4"
-  fill="#59C3C3">
+<circle cx="63"
+        cy="48"
+        r="4"
+        fill="#59C3C3">
 
   <animate
     attributeName="r"
@@ -256,113 +191,85 @@
 
 </circle>
 
-
-<text
-  x="76"
-  y="53"
-  font-size="9"
-  font-weight="800"
-  letter-spacing="1.8"
-  fill="#BDEEEE">
-
-  AI • REGRESSION ANALYTICS
-
+<text x="76"
+      y="53"
+      font-size="9"
+      font-weight="800"
+      letter-spacing="1.8"
+      fill="#BDEEEE">
+  DATA ANALYTICS • DATA PREPARATION
 </text>
 
 
-<!-- TITLE -->
+<!-- MAIN TITLE -->
 
-<text
-  x="46"
-  y="112"
-  font-size="39"
-  font-weight="900"
-  fill="#FFFFFF">
-
-  ROBUST
-
+<text x="46"
+      y="112"
+      font-size="34"
+      font-weight="900"
+      fill="#FFFFFF">
+  PART B :
 </text>
 
-
-<text
-  x="46"
-  y="154"
-  font-size="39"
-  font-weight="900"
-  fill="#FFFFFF">
-
-  REGRESSION
-
+<text x="46"
+      y="151"
+      font-size="29"
+      font-weight="900"
+      fill="#FFFFFF">
+  DATASET
 </text>
 
-
-<text
-  x="46"
-  y="196"
-  font-size="39"
-  font-weight="900"
-  fill="#59C3C3">
-
-  ENGINE
-
+<text x="46"
+      y="188"
+      font-size="29"
+      font-weight="900"
+      fill="#59C3C3">
+  UNDERSTANDING
 </text>
 
-
-<text
-  x="48"
-  y="224"
-  font-size="20"
-  font-weight="800"
-  fill="#FFFFFF">
-
-  HOUSE PRICE PREDICTION
-
+<text x="46"
+      y="225"
+      font-size="29"
+      font-weight="900"
+      fill="#FFFFFF">
+  &amp; PREPARATION
 </text>
 
-
-<text
-  x="48"
-  y="248"
-  font-size="11"
-  letter-spacing="1.4"
-  fill="#B7C6D9">
-
-  ROBUST • RELIABLE • DATA-DRIVEN
-
+<text x="48"
+      y="252"
+      font-size="10"
+      letter-spacing="1.35"
+      fill="#B7C6D9">
+  PROFILE • CLEAN • TRANSFORM • READY
 </text>
 
 </g>
 
 
 <!-- ================================================= -->
-<!-- HOUSE / MODEL ORBIT -->
+<!-- DATASET ORBIT -->
 <!-- ================================================= -->
 
-<g transform="translate(145 326)">
+<g transform="translate(150 337)">
 
-  <circle
-    r="66"
-    fill="none"
-    stroke="#59C3C3"
-    stroke-opacity=".12"/>
+  <circle r="66"
+          fill="none"
+          stroke="#59C3C3"
+          stroke-opacity=".12"/>
 
+  <circle r="48"
+          fill="none"
+          stroke="#FFFFFF"
+          stroke-opacity=".12"
+          stroke-dasharray="3 8"/>
 
-  <circle
-    r="47"
-    fill="none"
-    stroke="#FFFFFF"
-    stroke-opacity=".12"
-    stroke-dasharray="3 8"/>
-
-
-  <path
-    d="M-58 0
-       A58 58 0 0 1 40-42"
-    fill="none"
-    stroke="#59C3C3"
-    stroke-width="3"
-    stroke-linecap="round"
-    stroke-dasharray="18 12">
+  <path d="M-58 0
+           A58 58 0 0 1 40-42"
+        fill="none"
+        stroke="#59C3C3"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-dasharray="18 12">
 
     <animateTransform
       attributeName="transform"
@@ -375,39 +282,60 @@
   </path>
 
 
-  <circle
-    cx="0"
-    cy="0"
-    r="27"
-    fill="#0B132B"
-    stroke="#59C3C3"
-    stroke-width="2"/>
+  <!-- DATA TABLE -->
+
+  <rect x="-28"
+        y="-23"
+        width="56"
+        height="46"
+        rx="5"
+        fill="#0B132B"
+        stroke="#59C3C3"
+        stroke-width="2"/>
+
+  <line x1="-19"
+        y1="-10"
+        x2="19"
+        y2="-10"
+        stroke="#59C3C3"
+        stroke-width="2"/>
+
+  <line x1="-19"
+        y1="0"
+        x2="19"
+        y2="0"
+        stroke="#FFFFFF"
+        stroke-opacity=".55"/>
+
+  <line x1="-19"
+        y1="10"
+        x2="19"
+        y2="10"
+        stroke="#FFFFFF"
+        stroke-opacity=".55"/>
+
+  <line x1="-5"
+        y1="-10"
+        x2="-5"
+        y2="19"
+        stroke="#FFFFFF"
+        stroke-opacity=".3"/>
+
+  <line x1="8"
+        y1="-10"
+        x2="8"
+        y2="19"
+        stroke="#FFFFFF"
+        stroke-opacity=".3"/>
 
 
-  <!-- HOUSE -->
+  <!-- DATA NODE -->
 
-  <path
-    d="M-13 3
-       L-13 -7
-       L0 -18
-       L13 -7
-       V8
-       H5
-       V0
-       H-5
-       V8
-       H-13Z"
-    fill="none"
-    stroke="#FFFFFF"
-    stroke-width="2"/>
-
-
-  <circle
-    cx="0"
-    cy="-66"
-    r="6"
-    fill="#59C3C3"
-    filter="url(#glow)">
+  <circle cx="0"
+          cy="-66"
+          r="6"
+          fill="#59C3C3"
+          filter="url(#glow)">
 
     <animateTransform
       attributeName="transform"
@@ -428,63 +356,47 @@
 
 <g font-family="Arial, sans-serif">
 
-
-<text
-  x="48"
-  y="424"
-  font-size="8.5"
-  font-weight="800"
-  letter-spacing="1.3"
-  fill="#8EA1BB">
-
-  01 PREPROCESS
-
+<text x="48"
+      y="424"
+      font-size="8.5"
+      font-weight="800"
+      letter-spacing="1.3"
+      fill="#8EA1BB">
+  01 PROFILE
 </text>
 
-
-<text
-  x="150"
-  y="424"
-  font-size="8.5"
-  font-weight="800"
-  letter-spacing="1.3"
-  fill="#8EA1BB">
-
-  02 TRAIN
-
+<text x="145"
+      y="424"
+      font-size="8.5"
+      font-weight="800"
+      letter-spacing="1.3"
+      fill="#8EA1BB">
+  02 CLEAN
 </text>
 
-
-<text
-  x="225"
-  y="424"
-  font-size="8.5"
-  font-weight="800"
-  letter-spacing="1.3"
-  fill="#8EA1BB">
-
-  03 PREDICT
-
+<text x="220"
+      y="424"
+      font-size="8.5"
+      font-weight="800"
+      letter-spacing="1.3"
+      fill="#8EA1BB">
+  03 TRANSFORM
 </text>
 
+<rect x="48"
+      y="443"
+      width="250"
+      height="2"
+      rx="1"
+      fill="#FFFFFF"
+      opacity=".13"/>
 
-<rect
-  x="48"
-  y="443"
-  width="250"
-  height="2"
-  rx="1"
-  fill="#FFFFFF"
-  opacity=".13"/>
-
-
-<rect
-  x="48"
-  y="443"
-  width="105"
-  height="2"
-  rx="1"
-  fill="#59C3C3">
+<rect x="48"
+      y="443"
+      width="105"
+      height="2"
+      rx="1"
+      fill="#59C3C3">
 
   <animate
     attributeName="width"
@@ -494,16 +406,12 @@
 
 </rect>
 
-
-<text
-  x="48"
-  y="468"
-  font-size="8.5"
-  letter-spacing="1.1"
-  fill="#71849D">
-
-  OUTLIER RESILIENCE • REGRESSION • PREDICTION
-
+<text x="48"
+      y="468"
+      font-size="8.5"
+      letter-spacing="1.1"
+      fill="#71849D">
+  MISSING VALUES • OUTLIERS • FEATURES • DATA QUALITY
 </text>
 
 </g>
@@ -513,12 +421,11 @@
 <!-- FLOATING PARTICLES -->
 <!-- ================================================= -->
 
-<circle
-  cx="340"
-  cy="74"
-  r="3"
-  fill="#59C3C3"
-  filter="url(#softGlow)">
+<circle cx="340"
+        cy="74"
+        r="3"
+        fill="#59C3C3"
+        filter="url(#softGlow)">
 
   <animate
     attributeName="cy"
@@ -528,12 +435,10 @@
 
 </circle>
 
-
-<circle
-  cx="390"
-  cy="410"
-  r="3"
-  fill="#59C3C3">
+<circle cx="390"
+        cy="410"
+        r="3"
+        fill="#59C3C3">
 
   <animate
     attributeName="r"
@@ -543,12 +448,10 @@
 
 </circle>
 
-
-<circle
-  cx="1150"
-  cy="86"
-  r="3"
-  fill="#59C3C3">
+<circle cx="1150"
+        cy="86"
+        r="3"
+        fill="#59C3C3">
 
   <animate
     attributeName="cx"
@@ -565,25 +468,22 @@
 
 <g filter="url(#shadow)">
 
-<rect
-  x="445"
-  y="38"
-  width="705"
-  height="415"
-  rx="30"
-  fill="#0B132B"
-  fill-opacity=".88"
-  stroke="#59C3C3"
-  stroke-opacity=".28"/>
+<rect x="445"
+      y="38"
+      width="705"
+      height="415"
+      rx="30"
+      fill="#0B132B"
+      fill-opacity=".88"
+      stroke="#59C3C3"
+      stroke-opacity=".28"/>
 
-
-<rect
-  x="445"
-  y="38"
-  width="705"
-  height="415"
-  rx="30"
-  fill="url(#glass)"/>
+<rect x="445"
+      y="38"
+      width="705"
+      height="415"
+      rx="30"
+      fill="url(#glass)"/>
 
 </g>
 
@@ -592,79 +492,64 @@
 <!-- HEADER -->
 <!-- ================================================= -->
 
-<rect
-  x="445"
-  y="38"
-  width="705"
-  height="66"
-  rx="30"
-  fill="#0B132B"
-  fill-opacity=".72"/>
+<rect x="445"
+      y="38"
+      width="705"
+      height="66"
+      rx="30"
+      fill="#0B132B"
+      fill-opacity=".72"/>
+
+<rect x="445"
+      y="76"
+      width="705"
+      height="28"
+      fill="#0B132B"
+      fill-opacity=".72"/>
 
 
-<rect
-  x="445"
-  y="76"
-  width="705"
-  height="28"
-  fill="#0B132B"
-  fill-opacity=".72"/>
+<circle cx="475"
+        cy="71"
+        r="5"
+        fill="#59C3C3"/>
 
+<circle cx="492"
+        cy="71"
+        r="5"
+        fill="#3B5875"/>
 
-<circle
-  cx="475"
-  cy="71"
-  r="5"
-  fill="#59C3C3"/>
+<circle cx="509"
+        cy="71"
+        r="5"
+        fill="#1C2948"/>
 
-
-<circle
-  cx="492"
-  cy="71"
-  r="5"
-  fill="#3B5875"/>
-
-
-<circle
-  cx="509"
-  cy="71"
-  r="5"
-  fill="#1C2948"/>
-
-
-<text
-  x="538"
-  y="77"
-  font-family="Arial"
-  font-size="13"
-  font-weight="800"
-  letter-spacing="1.4"
-  fill="#FFFFFF">
-
-  HOUSE PRICE MODEL
-
+<text x="538"
+      y="77"
+      font-family="Arial"
+      font-size="13"
+      font-weight="800"
+      letter-spacing="1.4"
+      fill="#FFFFFF">
+  DATASET PREPARATION
 </text>
 
 
-<!-- MODEL LIVE -->
+<!-- READY -->
 
-<rect
-  x="1030"
-  y="58"
-  width="98"
-  height="26"
-  rx="13"
-  fill="#59C3C3"
-  fill-opacity=".11"
-  stroke="#59C3C3"
-  stroke-opacity=".5"/>
+<rect x="1038"
+      y="58"
+      width="90"
+      height="26"
+      rx="13"
+      fill="#59C3C3"
+      fill-opacity=".11"
+      stroke="#59C3C3"
+      stroke-opacity=".5"/>
 
-
-<circle
-  cx="1046"
-  cy="71"
-  r="4"
-  fill="#59C3C3">
+<circle cx="1054"
+        cy="71"
+        r="4"
+        fill="#59C3C3">
 
   <animate
     attributeName="opacity"
@@ -674,17 +559,13 @@
 
 </circle>
 
-
-<text
-  x="1057"
-  y="75"
-  font-family="Arial"
-  font-size="8"
-  font-weight="800"
-  fill="#BDEEEE">
-
-  MODEL LIVE
-
+<text x="1065"
+      y="75"
+      font-family="Arial"
+      font-size="8"
+      font-weight="800"
+      fill="#BDEEEE">
+  READY
 </text>
 
 
@@ -694,73 +575,55 @@
 
 <g font-family="Arial, sans-serif">
 
+<rect x="470"
+      y="122"
+      width="202"
+      height="82"
+      rx="17"
+      fill="#FFFFFF"
+      fill-opacity=".07"
+      stroke="#FFFFFF"
+      stroke-opacity=".10"/>
 
-<rect
-  x="470"
-  y="122"
-  width="202"
-  height="82"
-  rx="17"
-  fill="#FFFFFF"
-  fill-opacity=".07"
-  stroke="#FFFFFF"
-  stroke-opacity=".10"/>
-
-
-<text
-  x="490"
-  y="146"
-  font-size="9"
-  font-weight="800"
-  letter-spacing="1.2"
-  fill="#8EA1BB">
-
+<text x="490"
+      y="146"
+      font-size="9"
+      font-weight="800"
+      letter-spacing="1.2"
+      fill="#8EA1BB">
   DATASET SIZE
-
 </text>
 
-
-<text
-  x="490"
-  y="181"
-  font-size="29"
-  font-weight="900"
-  fill="#FFFFFF">
-
+<text x="490"
+      y="181"
+      font-size="29"
+      font-weight="900"
+      fill="#FFFFFF">
   4.2K
-
 </text>
 
-
-<text
-  x="570"
-  y="181"
-  font-size="9"
-  font-weight="800"
-  fill="#59C3C3">
-
+<text x="570"
+      y="181"
+      font-size="9"
+      font-weight="800"
+      fill="#59C3C3">
   ROWS
-
 </text>
 
+<rect x="490"
+      y="191"
+      width="140"
+      height="4"
+      rx="2"
+      fill="#FFFFFF"
+      opacity=".12"/>
 
-<rect
-  x="490"
-  y="191"
-  width="140"
-  height="4"
-  rx="2"
-  fill="#FFFFFF"
-  opacity=".12"/>
-
-
-<rect
-  x="490"
-  y="191"
-  width="105"
-  height="4"
-  rx="2"
-  fill="#59C3C3">
+<rect x="490"
+      y="191"
+      width="105"
+      height="4"
+      rx="2"
+      fill="#59C3C3">
 
   <animate
     attributeName="width"
@@ -775,64 +638,49 @@
 <!-- KPI 2 -->
 <!-- ================================================= -->
 
-<rect
-  x="687"
-  y="122"
-  width="202"
-  height="82"
-  rx="17"
-  fill="#FFFFFF"
-  fill-opacity=".07"
-  stroke="#FFFFFF"
-  stroke-opacity=".10"/>
+<rect x="687"
+      y="122"
+      width="202"
+      height="82"
+      rx="17"
+      fill="#FFFFFF"
+      fill-opacity=".07"
+      stroke="#FFFFFF"
+      stroke-opacity=".10"/>
 
-
-<text
-  x="707"
-  y="146"
-  font-size="9"
-  font-weight="800"
-  letter-spacing="1.2"
-  fill="#8EA1BB">
-
-  MODEL R²
-
+<text x="707"
+      y="146"
+      font-size="9"
+      font-weight="800"
+      letter-spacing="1.2"
+      fill="#8EA1BB">
+  MISSING VALUES
 </text>
 
-
-<text
-  x="707"
-  y="181"
-  font-size="29"
-  font-weight="900"
-  fill="#FFFFFF">
-
-  0.92
-
+<text x="707"
+      y="181"
+      font-size="29"
+      font-weight="900"
+      fill="#FFFFFF">
+  0.8%
 </text>
 
-
-<text
-  x="798"
-  y="181"
-  font-size="9"
-  font-weight="800"
-  fill="#59C3C3">
-
-  +18.3%
-
+<text x="800"
+      y="181"
+      font-size="9"
+      font-weight="800"
+      fill="#59C3C3">
+  CLEANED
 </text>
 
-
-<path
-  d="M707 193
-     C730 176 746 195 768 181
-     C790 168 811 188 850 164"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="2.5"
-  stroke-linecap="round"
-  stroke-dasharray="0 170">
+<path d="M707 193
+         C730 176 746 195 768 181
+         C790 168 811 188 850 164"
+      fill="none"
+      stroke="#59C3C3"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-dasharray="0 170">
 
   <animate
     attributeName="stroke-dasharray"
@@ -847,59 +695,54 @@
 <!-- KPI 3 -->
 <!-- ================================================= -->
 
-<rect
-  x="904"
-  y="122"
-  width="221"
-  height="82"
-  rx="17"
-  fill="#59C3C3"/>
+<rect x="904"
+      y="122"
+      width="221"
+      height="82"
+      rx="17"
+      fill="#59C3C3"/>
 
-
-<text
-  x="924"
-  y="146"
-  font-size="9"
-  font-weight="800"
-  letter-spacing="1.2"
-  fill="#0B132B">
-
-  PREDICTION ACC.
-
+<text x="924"
+      y="146"
+      font-size="9"
+      font-weight="800"
+      letter-spacing="1.2"
+      fill="#0B132B">
+  FEATURES READY
 </text>
 
-
-<text
-  x="924"
-  y="181"
-  font-size="29"
-  font-weight="900"
-  fill="#0B132B">
-
-  93.7%
-
+<text x="924"
+      y="181"
+      font-size="29"
+      font-weight="900"
+      fill="#0B132B">
+  05
 </text>
 
+<text x="1000"
+      y="181"
+      font-size="9"
+      font-weight="800"
+      fill="#0B132B">
+  INPUTS
+</text>
 
-<circle
-  cx="1084"
-  cy="163"
-  r="22"
-  fill="none"
-  stroke="#0B132B"
-  stroke-opacity=".18"
-  stroke-width="5"/>
+<circle cx="1084"
+        cy="163"
+        r="22"
+        fill="none"
+        stroke="#0B132B"
+        stroke-opacity=".18"
+        stroke-width="5"/>
 
-
-<circle
-  cx="1084"
-  cy="163"
-  r="22"
-  fill="none"
-  stroke="#0B132B"
-  stroke-width="5"
-  stroke-dasharray="95 138"
-  transform="rotate(-90 1084 163)">
+<circle cx="1084"
+        cy="163"
+        r="22"
+        fill="none"
+        stroke="#0B132B"
+        stroke-width="5"
+        stroke-dasharray="95 138"
+        transform="rotate(-90 1084 163)">
 
   <animate
     attributeName="stroke-dasharray"
@@ -913,103 +756,124 @@
 
 
 <!-- ================================================= -->
-<!-- PREDICTED VS ACTUAL -->
+<!-- DATA QUALITY ANALYSIS -->
 <!-- ================================================= -->
 
-<rect
-  x="470"
-  y="222"
-  width="420"
-  height="205"
-  rx="19"
-  fill="#071022"
-  stroke="#FFFFFF"
-  stroke-opacity=".08"/>
+<rect x="470"
+      y="222"
+      width="420"
+      height="205"
+      rx="19"
+      fill="#071022"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"/>
 
+<text x="492"
+      y="250"
+      font-family="Arial"
+      font-size="10"
+      font-weight="800"
+      letter-spacing="1.3"
+      fill="#FFFFFF">
+  DATA QUALITY PROFILE
+</text>
 
-<text
-  x="492"
-  y="250"
-  font-family="Arial"
-  font-size="10"
-  font-weight="800"
-  letter-spacing="1.3"
-  fill="#FFFFFF">
-
-  PREDICTED VS ACTUAL
-
+<text x="492"
+      y="267"
+      font-family="Arial"
+      font-size="8"
+      fill="#71849D">
+  FEATURE DISTRIBUTION &amp; CLEANING
 </text>
 
 
-<text
-  x="492"
-  y="267"
-  font-family="Arial"
-  font-size="8"
-  fill="#71849D">
+<!-- GRID -->
 
-  HOUSE PRICE SIGNAL
+<g opacity=".12"
+   stroke="#FFFFFF">
 
-</text>
+  <line x1="492"
+        y1="296"
+        x2="868"
+        y2="296"/>
 
+  <line x1="492"
+        y1="332"
+        x2="868"
+        y2="332"/>
 
-<!-- CHART GRID -->
+  <line x1="492"
+        y1="368"
+        x2="868"
+        y2="368"/>
 
-<g opacity=".12" stroke="#FFFFFF">
-
-  <line
-    x1="492"
-    y1="296"
-    x2="868"
-    y2="296"/>
-
-  <line
-    x1="492"
-    y1="332"
-    x2="868"
-    y2="332"/>
-
-  <line
-    x1="492"
-    y1="368"
-    x2="868"
-    y2="368"/>
-
-  <line
-    x1="492"
-    y1="404"
-    x2="868"
-    y2="404"/>
+  <line x1="492"
+        y1="404"
+        x2="868"
+        y2="404"/>
 
 </g>
 
 
-<!-- PRICE BARS -->
+<!-- DATA BARS -->
 
 <g fill="#3B5875">
 
-  <rect x="500" y="366" width="24" height="38" rx="4"/>
-  <rect x="555" y="342" width="24" height="62" rx="4"/>
-  <rect x="610" y="354" width="24" height="50" rx="4"/>
-  <rect x="665" y="315" width="24" height="89" rx="4"/>
-  <rect x="720" y="332" width="24" height="72" rx="4"/>
-  <rect x="775" y="291" width="24" height="113" rx="4"/>
-  <rect x="830" y="307" width="24" height="97" rx="4"/>
+  <rect x="500"
+        y="350"
+        width="30"
+        height="54"
+        rx="4"/>
+
+  <rect x="552"
+        y="325"
+        width="30"
+        height="79"
+        rx="4"/>
+
+  <rect x="604"
+        y="365"
+        width="30"
+        height="39"
+        rx="4"/>
+
+  <rect x="656"
+        y="305"
+        width="30"
+        height="99"
+        rx="4"/>
+
+  <rect x="708"
+        y="342"
+        width="30"
+        height="62"
+        rx="4"/>
+
+  <rect x="760"
+        y="290"
+        width="30"
+        height="114"
+        rx="4"/>
+
+  <rect x="812"
+        y="318"
+        width="30"
+        height="86"
+        rx="4"/>
 
 </g>
 
 
-<!-- PREDICTION LINE -->
+<!-- CLEANING LINE -->
 
-<path
-  d="M512 351
-     C570 332 610 364 677 320
-     C731 286 773 329 842 281"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="3.5"
-  stroke-linecap="round"
-  stroke-dasharray="0 500">
+<path d="M515 341
+         C565 330 610 351 671 315
+         C720 285 765 322 825 278"
+      fill="none"
+      stroke="#59C3C3"
+      stroke-width="3.5"
+      stroke-linecap="round"
+      stroke-dasharray="0 500">
 
   <animate
     attributeName="stroke-dasharray"
@@ -1020,12 +884,11 @@
 </path>
 
 
-<circle
-  cx="842"
-  cy="281"
-  r="5"
-  fill="#FFFFFF"
-  filter="url(#softGlow)">
+<circle cx="825"
+        cy="278"
+        r="5"
+        fill="#FFFFFF"
+        filter="url(#softGlow)">
 
   <animate
     attributeName="r"
@@ -1038,276 +901,181 @@
 
 <!-- LABELS -->
 
-<g
-  font-family="Arial"
-  font-size="7"
-  fill="#71849D">
+<g font-family="Arial"
+   font-size="7"
+   fill="#71849D">
 
-  <text x="500" y="417">LOW</text>
-  <text x="555" y="417">MID</text>
-  <text x="610" y="417">AVG</text>
-  <text x="665" y="417">HIGH</text>
-  <text x="720" y="417">PREM</text>
-  <text x="775" y="417">TOP</text>
-
-</g>
-
-
-<!-- ================================================= -->
-<!-- MODEL PERFORMANCE -->
-<!-- ================================================= -->
-
-<rect
-  x="906"
-  y="222"
-  width="219"
-  height="205"
-  rx="19"
-  fill="#FFFFFF"
-  fill-opacity=".055"
-  stroke="#FFFFFF"
-  stroke-opacity=".10"/>
-
-
-<text
-  x="928"
-  y="250"
-  font-family="Arial"
-  font-size="10"
-  font-weight="800"
-  letter-spacing="1.3"
-  fill="#FFFFFF">
-
-  MODEL PERFORMANCE
-
-</text>
-
-
-<!-- RINGS -->
-
-<g
-  font-family="Arial"
-  text-anchor="middle">
-
-
-<!-- R2 -->
-
-<circle
-  cx="950"
-  cy="310"
-  r="27"
-  fill="none"
-  stroke="#FFFFFF"
-  stroke-opacity=".10"
-  stroke-width="6"/>
-
-
-<circle
-  cx="950"
-  cy="310"
-  r="27"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="6"
-  stroke-dasharray="143 170"
-  transform="rotate(-90 950 310)"/>
-
-
-<text
-  x="950"
-  y="315"
-  font-size="13"
-  font-weight="900"
-  fill="#FFFFFF">
-
-  92%
-
-</text>
-
-
-<text
-  x="950"
-  y="350"
-  font-size="7"
-  font-weight="800"
-  fill="#8EA1BB">
-
-  R² SCORE
-
-</text>
-
-
-<!-- ACCURACY -->
-
-<circle
-  cx="1018"
-  cy="310"
-  r="27"
-  fill="none"
-  stroke="#FFFFFF"
-  stroke-opacity=".10"
-  stroke-width="6"/>
-
-
-<circle
-  cx="1018"
-  cy="310"
-  r="27"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="6"
-  stroke-dasharray="137 170"
-  transform="rotate(-90 1018 310)"/>
-
-
-<text
-  x="1018"
-  y="315"
-  font-size="13"
-  font-weight="900"
-  fill="#FFFFFF">
-
-  91%
-
-</text>
-
-
-<text
-  x="1018"
-  y="350"
-  font-size="7"
-  font-weight="800"
-  fill="#8EA1BB">
-
-  ACCURACY
-
-</text>
-
-
-<!-- FIT -->
-
-<circle
-  cx="1086"
-  cy="310"
-  r="27"
-  fill="none"
-  stroke="#FFFFFF"
-  stroke-opacity=".10"
-  stroke-width="6"/>
-
-
-<circle
-  cx="1086"
-  cy="310"
-  r="27"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="6"
-  stroke-dasharray="145 170"
-  transform="rotate(-90 1086 310)"/>
-
-
-<text
-  x="1086"
-  y="315"
-  font-size="13"
-  font-weight="900"
-  fill="#FFFFFF">
-
-  93%
-
-</text>
-
-
-<text
-  x="1086"
-  y="350"
-  font-size="7"
-  font-weight="800"
-  fill="#8EA1BB">
-
-  FIT
-
-</text>
+  <text x="500" y="417">AREA</text>
+  <text x="552" y="417">BED</text>
+  <text x="604" y="417">BATH</text>
+  <text x="656" y="417">LOC</text>
+  <text x="708" y="417">AGE</text>
+  <text x="760" y="417">PRICE</text>
+  <text x="812" y="417">SCORE</text>
 
 </g>
 
 
 <!-- ================================================= -->
-<!-- HOUSE VALUE ENGINE -->
+<!-- PREPARATION STATUS -->
 <!-- ================================================= -->
 
-<g transform="translate(1017 387)">
+<rect x="906"
+      y="222"
+      width="219"
+      height="205"
+      rx="19"
+      fill="#FFFFFF"
+      fill-opacity=".055"
+      stroke="#FFFFFF"
+      stroke-opacity=".10"/>
 
-  <path
-    d="M-28 -3
-       L0 -28
-       L28 -3
-       V25
-       H-28Z"
-    fill="none"
-    stroke="#59C3C3"
-    stroke-width="2"/>
-
-
-  <path
-    d="M-8 25
-       V7
-       H8
-       V25
-       M-20 0
-       H20"
-    fill="none"
-    stroke="#FFFFFF"
-    stroke-opacity=".8"
-    stroke-width="2"/>
+<text x="928"
+      y="250"
+      font-family="Arial"
+      font-size="10"
+      font-weight="800"
+      letter-spacing="1.3"
+      fill="#FFFFFF">
+  PREPARATION STATUS
+</text>
 
 
-  <circle
-    cx="0"
-    cy="-28"
-    r="4"
-    fill="#59C3C3"
-    filter="url(#softGlow)">
+<!-- STATUS ITEMS -->
 
-    <animate
-      attributeName="r"
-      values="3;4.5;3"
-      dur="4s"
-      repeatCount="indefinite"/>
+<g font-family="Arial">
 
-  </circle>
+  <circle cx="936"
+          cy="282"
+          r="5"
+          fill="#59C3C3"/>
+
+  <text x="950"
+        y="286"
+        font-size="8"
+        font-weight="700"
+        fill="#FFFFFF">
+    DUPLICATES
+  </text>
+
+  <text x="1090"
+        y="286"
+        text-anchor="end"
+        font-size="8"
+        font-weight="800"
+        fill="#59C3C3">
+    CLEAN
+  </text>
+
+
+  <circle cx="936"
+          cy="316"
+          r="5"
+          fill="#59C3C3"/>
+
+  <text x="950"
+        y="320"
+        font-size="8"
+        font-weight="700"
+        fill="#FFFFFF">
+    MISSING DATA
+  </text>
+
+  <text x="1090"
+        y="320"
+        text-anchor="end"
+        font-size="8"
+        font-weight="800"
+        fill="#59C3C3">
+    HANDLED
+  </text>
+
+
+  <circle cx="936"
+          cy="350"
+          r="5"
+          fill="#59C3C3"/>
+
+  <text x="950"
+        y="354"
+        font-size="8"
+        font-weight="700"
+        fill="#FFFFFF">
+    OUTLIERS
+  </text>
+
+  <text x="1090"
+        y="354"
+        text-anchor="end"
+        font-size="8"
+        font-weight="800"
+        fill="#59C3C3">
+    CHECKED
+  </text>
+
+
+  <circle cx="936"
+          cy="384"
+          r="5"
+          fill="#59C3C3"/>
+
+  <text x="950"
+        y="388"
+        font-size="8"
+        font-weight="700"
+        fill="#FFFFFF">
+    FEATURES
+  </text>
+
+  <text x="1090"
+        y="388"
+        text-anchor="end"
+        font-size="8"
+        font-weight="800"
+        fill="#59C3C3">
+    READY
+  </text>
 
 </g>
 
 
-<text
-  x="1017"
-  y="425"
-  text-anchor="middle"
-  font-family="Arial"
-  font-size="7"
-  font-weight="800"
-  letter-spacing="1"
-  fill="#8EA1BB">
+<!-- PROGRESS -->
 
-  HOUSE VALUE ENGINE
+<rect x="928"
+      y="405"
+      width="164"
+      height="4"
+      rx="2"
+      fill="#FFFFFF"
+      opacity=".12"/>
 
-</text>
+<rect x="928"
+      y="405"
+      width="128"
+      height="4"
+      rx="2"
+      fill="#59C3C3">
+
+  <animate
+    attributeName="width"
+    values="70;155;128"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</rect>
 
 
 <!-- ================================================= -->
 <!-- CORNER ANIMATION -->
 <!-- ================================================= -->
 
-<path
-  d="M1145 455
-     H1182
-     V418"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="2.5"
-  stroke-dasharray="0 110">
+<path d="M1145 455
+         H1182
+         V418"
+      fill="none"
+      stroke="#59C3C3"
+      stroke-width="2.5"
+      stroke-dasharray="0 110">
 
   <animate
     attributeName="stroke-dasharray"
@@ -1317,43 +1085,37 @@
 
 </path>
 
-
-<path
-  d="M430 450
-     H395
-     V415"
-  fill="none"
-  stroke="#59C3C3"
-  stroke-width="2"/>
+<path d="M430 450
+         H395
+         V415"
+      fill="none"
+      stroke="#59C3C3"
+      stroke-width="2"/>
 
 
 <!-- ================================================= -->
 <!-- FOOTER -->
 <!-- ================================================= -->
 
-<text
-  x="445"
-  y="480"
-  font-family="Arial"
-  font-size="9"
-  font-weight="700"
-  letter-spacing="1.8"
-  fill="#8EA1BB">
-
-  PYTHON • REGRESSION • FEATURE ENGINEERING • PREDICTION
-
+<text x="445"
+      y="480"
+      font-family="Arial"
+      font-size="9"
+      font-weight="700"
+      letter-spacing="1.8"
+      fill="#8EA1BB">
+  DATA PROFILING • CLEANING • OUTLIER CHECK • FEATURE PREPARATION
 </text>
 
 
-<!-- SMALL ROTATING SQUARE -->
+<!-- ROTATING SQUARE -->
 
-<rect
-  x="1160"
-  y="150"
-  width="9"
-  height="9"
-  rx="2"
-  fill="#59C3C3">
+<rect x="1160"
+      y="150"
+      width="9"
+      height="9"
+      rx="2"
+      fill="#59C3C3">
 
   <animateTransform
     attributeName="transform"
@@ -1369,5 +1131,3 @@
 </g>
 
 </svg>
-
-
