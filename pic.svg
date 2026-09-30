@@ -1,0 +1,1371 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="500"
+     viewBox="0 0 1200 500">
+
+<defs>
+
+  <!-- ========================= -->
+  <!-- BACKGROUND -->
+  <!-- ========================= -->
+
+  <linearGradient id="bg"
+                  x1="0" y1="0"
+                  x2="1" y2="1">
+
+    <stop offset="0%" stop-color="#0B132B"/>
+    <stop offset="48%" stop-color="#1C2948"/>
+    <stop offset="100%" stop-color="#3B5875"/>
+
+  </linearGradient>
+
+
+  <!-- ========================= -->
+  <!-- TURQUOISE -->
+  <!-- ========================= -->
+
+  <linearGradient id="cyan"
+                  x1="0" y1="0"
+                  x2="1" y2="1">
+
+    <stop offset="0%" stop-color="#59C3C3"/>
+    <stop offset="100%" stop-color="#3B9FA6"/>
+
+  </linearGradient>
+
+
+  <!-- ========================= -->
+  <!-- GLASS -->
+  <!-- ========================= -->
+
+  <linearGradient id="glass"
+                  x1="0" y1="0"
+                  x2="0" y2="1">
+
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".13"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".035"/>
+
+  </linearGradient>
+
+
+  <!-- ========================= -->
+  <!-- GRID -->
+  <!-- ========================= -->
+
+  <pattern id="grid"
+           width="28"
+           height="28"
+           patternUnits="userSpaceOnUse">
+
+    <path d="M28 0H0V28"
+          fill="none"
+          stroke="#59C3C3"
+          stroke-opacity=".08"/>
+
+  </pattern>
+
+
+  <!-- ========================= -->
+  <!-- SHADOW -->
+  <!-- ========================= -->
+
+  <filter id="shadow"
+          x="-30%"
+          y="-30%"
+          width="160%"
+          height="180%">
+
+    <feDropShadow
+      dx="0"
+      dy="18"
+      stdDeviation="18"
+      flood-color="#000"
+      flood-opacity=".32"/>
+
+  </filter>
+
+
+  <!-- ========================= -->
+  <!-- GLOW -->
+  <!-- ========================= -->
+
+  <filter id="glow"
+          x="-100%"
+          y="-100%"
+          width="300%"
+          height="300%">
+
+    <feGaussianBlur
+      stdDeviation="7"
+      result="blur"/>
+
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+
+  </filter>
+
+
+  <filter id="softGlow"
+          x="-100%"
+          y="-100%"
+          width="300%"
+          height="300%">
+
+    <feGaussianBlur
+      stdDeviation="2.5"
+      result="blur"/>
+
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+
+  </filter>
+
+
+  <!-- ========================= -->
+  <!-- CLIP -->
+  <!-- ========================= -->
+
+  <clipPath id="clip">
+
+    <rect
+      width="1200"
+      height="500"
+      rx="24"/>
+
+  </clipPath>
+
+</defs>
+
+
+<g clip-path="url(#clip)">
+
+
+<!-- ================================================= -->
+<!-- BACKGROUND -->
+<!-- ================================================= -->
+
+<rect
+  width="1200"
+  height="500"
+  fill="url(#bg)"/>
+
+
+<rect
+  x="430"
+  y="0"
+  width="770"
+  height="500"
+  fill="url(#grid)"/>
+
+
+<!-- ================================================= -->
+<!-- ABSTRACT LEFT PANELS -->
+<!-- ================================================= -->
+
+<path
+  d="M0 0
+     H210
+     L410 500
+     H0Z"
+  fill="#0B132B"/>
+
+
+<path
+  d="M210 0
+     H365
+     L535 500
+     H410Z"
+  fill="#1C2948"
+  opacity=".94"/>
+
+
+<path
+  d="M365 0
+     H520
+     L650 500
+     H535Z"
+  fill="#3B5875"
+  opacity=".82"/>
+
+
+<path
+  d="M520 0
+     H1200
+     V500
+     H650Z"
+  fill="#59C3C3"
+  opacity=".16"/>
+
+
+<!-- ================================================= -->
+<!-- SLOW MOVING LIGHT -->
+<!-- ================================================= -->
+
+<path
+  d="M820 -100
+     L900 -100
+     L610 600
+     L530 600Z"
+  fill="#59C3C3"
+  opacity=".045">
+
+  <animateTransform
+    attributeName="transform"
+    type="translate"
+    values="-260 0;520 0;-260 0"
+    dur="14s"
+    repeatCount="indefinite"/>
+
+</path>
+
+
+<!-- ================================================= -->
+<!-- LEFT TITLE -->
+<!-- ================================================= -->
+
+<g font-family="Arial, sans-serif">
+
+
+<rect
+  x="46"
+  y="34"
+  width="238"
+  height="28"
+  rx="14"
+  fill="#59C3C3"
+  fill-opacity=".12"
+  stroke="#59C3C3"
+  stroke-opacity=".45"/>
+
+
+<circle
+  cx="63"
+  cy="48"
+  r="4"
+  fill="#59C3C3">
+
+  <animate
+    attributeName="r"
+    values="3;4.5;3"
+    dur="4s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+
+<text
+  x="76"
+  y="53"
+  font-size="9"
+  font-weight="800"
+  letter-spacing="1.8"
+  fill="#BDEEEE">
+
+  AI • REGRESSION ANALYTICS
+
+</text>
+
+
+<!-- TITLE -->
+
+<text
+  x="46"
+  y="112"
+  font-size="39"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  ROBUST
+
+</text>
+
+
+<text
+  x="46"
+  y="154"
+  font-size="39"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  REGRESSION
+
+</text>
+
+
+<text
+  x="46"
+  y="196"
+  font-size="39"
+  font-weight="900"
+  fill="#59C3C3">
+
+  ENGINE
+
+</text>
+
+
+<text
+  x="48"
+  y="224"
+  font-size="20"
+  font-weight="800"
+  fill="#FFFFFF">
+
+  HOUSE PRICE PREDICTION
+
+</text>
+
+
+<text
+  x="48"
+  y="248"
+  font-size="11"
+  letter-spacing="1.4"
+  fill="#B7C6D9">
+
+  ROBUST • RELIABLE • DATA-DRIVEN
+
+</text>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- HOUSE / MODEL ORBIT -->
+<!-- ================================================= -->
+
+<g transform="translate(145 326)">
+
+  <circle
+    r="66"
+    fill="none"
+    stroke="#59C3C3"
+    stroke-opacity=".12"/>
+
+
+  <circle
+    r="47"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-opacity=".12"
+    stroke-dasharray="3 8"/>
+
+
+  <path
+    d="M-58 0
+       A58 58 0 0 1 40-42"
+    fill="none"
+    stroke="#59C3C3"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-dasharray="18 12">
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0"
+      to="360"
+      dur="8s"
+      repeatCount="indefinite"/>
+
+  </path>
+
+
+  <circle
+    cx="0"
+    cy="0"
+    r="27"
+    fill="#0B132B"
+    stroke="#59C3C3"
+    stroke-width="2"/>
+
+
+  <!-- HOUSE -->
+
+  <path
+    d="M-13 3
+       L-13 -7
+       L0 -18
+       L13 -7
+       V8
+       H5
+       V0
+       H-5
+       V8
+       H-13Z"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="2"/>
+
+
+  <circle
+    cx="0"
+    cy="-66"
+    r="6"
+    fill="#59C3C3"
+    filter="url(#glow)">
+
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0"
+      to="360"
+      dur="7s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- PROCESS -->
+<!-- ================================================= -->
+
+<g font-family="Arial, sans-serif">
+
+
+<text
+  x="48"
+  y="424"
+  font-size="8.5"
+  font-weight="800"
+  letter-spacing="1.3"
+  fill="#8EA1BB">
+
+  01 PREPROCESS
+
+</text>
+
+
+<text
+  x="150"
+  y="424"
+  font-size="8.5"
+  font-weight="800"
+  letter-spacing="1.3"
+  fill="#8EA1BB">
+
+  02 TRAIN
+
+</text>
+
+
+<text
+  x="225"
+  y="424"
+  font-size="8.5"
+  font-weight="800"
+  letter-spacing="1.3"
+  fill="#8EA1BB">
+
+  03 PREDICT
+
+</text>
+
+
+<rect
+  x="48"
+  y="443"
+  width="250"
+  height="2"
+  rx="1"
+  fill="#FFFFFF"
+  opacity=".13"/>
+
+
+<rect
+  x="48"
+  y="443"
+  width="105"
+  height="2"
+  rx="1"
+  fill="#59C3C3">
+
+  <animate
+    attributeName="width"
+    values="40;210;105"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</rect>
+
+
+<text
+  x="48"
+  y="468"
+  font-size="8.5"
+  letter-spacing="1.1"
+  fill="#71849D">
+
+  OUTLIER RESILIENCE • REGRESSION • PREDICTION
+
+</text>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- FLOATING PARTICLES -->
+<!-- ================================================= -->
+
+<circle
+  cx="340"
+  cy="74"
+  r="3"
+  fill="#59C3C3"
+  filter="url(#softGlow)">
+
+  <animate
+    attributeName="cy"
+    values="74;62;74"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+
+<circle
+  cx="390"
+  cy="410"
+  r="3"
+  fill="#59C3C3">
+
+  <animate
+    attributeName="r"
+    values="2;4;2"
+    dur="4.5s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+
+<circle
+  cx="1150"
+  cy="86"
+  r="3"
+  fill="#59C3C3">
+
+  <animate
+    attributeName="cx"
+    values="1150;1138;1150"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+
+<!-- ================================================= -->
+<!-- MAIN GLASS DASHBOARD -->
+<!-- ================================================= -->
+
+<g filter="url(#shadow)">
+
+<rect
+  x="445"
+  y="38"
+  width="705"
+  height="415"
+  rx="30"
+  fill="#0B132B"
+  fill-opacity=".88"
+  stroke="#59C3C3"
+  stroke-opacity=".28"/>
+
+
+<rect
+  x="445"
+  y="38"
+  width="705"
+  height="415"
+  rx="30"
+  fill="url(#glass)"/>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- HEADER -->
+<!-- ================================================= -->
+
+<rect
+  x="445"
+  y="38"
+  width="705"
+  height="66"
+  rx="30"
+  fill="#0B132B"
+  fill-opacity=".72"/>
+
+
+<rect
+  x="445"
+  y="76"
+  width="705"
+  height="28"
+  fill="#0B132B"
+  fill-opacity=".72"/>
+
+
+<circle
+  cx="475"
+  cy="71"
+  r="5"
+  fill="#59C3C3"/>
+
+
+<circle
+  cx="492"
+  cy="71"
+  r="5"
+  fill="#3B5875"/>
+
+
+<circle
+  cx="509"
+  cy="71"
+  r="5"
+  fill="#1C2948"/>
+
+
+<text
+  x="538"
+  y="77"
+  font-family="Arial"
+  font-size="13"
+  font-weight="800"
+  letter-spacing="1.4"
+  fill="#FFFFFF">
+
+  HOUSE PRICE MODEL
+
+</text>
+
+
+<!-- MODEL LIVE -->
+
+<rect
+  x="1030"
+  y="58"
+  width="98"
+  height="26"
+  rx="13"
+  fill="#59C3C3"
+  fill-opacity=".11"
+  stroke="#59C3C3"
+  stroke-opacity=".5"/>
+
+
+<circle
+  cx="1046"
+  cy="71"
+  r="4"
+  fill="#59C3C3">
+
+  <animate
+    attributeName="opacity"
+    values=".45;1;.45"
+    dur="3s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+
+<text
+  x="1057"
+  y="75"
+  font-family="Arial"
+  font-size="8"
+  font-weight="800"
+  fill="#BDEEEE">
+
+  MODEL LIVE
+
+</text>
+
+
+<!-- ================================================= -->
+<!-- KPI 1 -->
+<!-- ================================================= -->
+
+<g font-family="Arial, sans-serif">
+
+
+<rect
+  x="470"
+  y="122"
+  width="202"
+  height="82"
+  rx="17"
+  fill="#FFFFFF"
+  fill-opacity=".07"
+  stroke="#FFFFFF"
+  stroke-opacity=".10"/>
+
+
+<text
+  x="490"
+  y="146"
+  font-size="9"
+  font-weight="800"
+  letter-spacing="1.2"
+  fill="#8EA1BB">
+
+  DATASET SIZE
+
+</text>
+
+
+<text
+  x="490"
+  y="181"
+  font-size="29"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  4.2K
+
+</text>
+
+
+<text
+  x="570"
+  y="181"
+  font-size="9"
+  font-weight="800"
+  fill="#59C3C3">
+
+  ROWS
+
+</text>
+
+
+<rect
+  x="490"
+  y="191"
+  width="140"
+  height="4"
+  rx="2"
+  fill="#FFFFFF"
+  opacity=".12"/>
+
+
+<rect
+  x="490"
+  y="191"
+  width="105"
+  height="4"
+  rx="2"
+  fill="#59C3C3">
+
+  <animate
+    attributeName="width"
+    values="45;125;105"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</rect>
+
+
+<!-- ================================================= -->
+<!-- KPI 2 -->
+<!-- ================================================= -->
+
+<rect
+  x="687"
+  y="122"
+  width="202"
+  height="82"
+  rx="17"
+  fill="#FFFFFF"
+  fill-opacity=".07"
+  stroke="#FFFFFF"
+  stroke-opacity=".10"/>
+
+
+<text
+  x="707"
+  y="146"
+  font-size="9"
+  font-weight="800"
+  letter-spacing="1.2"
+  fill="#8EA1BB">
+
+  MODEL R²
+
+</text>
+
+
+<text
+  x="707"
+  y="181"
+  font-size="29"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  0.92
+
+</text>
+
+
+<text
+  x="798"
+  y="181"
+  font-size="9"
+  font-weight="800"
+  fill="#59C3C3">
+
+  +18.3%
+
+</text>
+
+
+<path
+  d="M707 193
+     C730 176 746 195 768 181
+     C790 168 811 188 850 164"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="2.5"
+  stroke-linecap="round"
+  stroke-dasharray="0 170">
+
+  <animate
+    attributeName="stroke-dasharray"
+    values="0 170;170 0"
+    dur="6s"
+    repeatCount="indefinite"/>
+
+</path>
+
+
+<!-- ================================================= -->
+<!-- KPI 3 -->
+<!-- ================================================= -->
+
+<rect
+  x="904"
+  y="122"
+  width="221"
+  height="82"
+  rx="17"
+  fill="#59C3C3"/>
+
+
+<text
+  x="924"
+  y="146"
+  font-size="9"
+  font-weight="800"
+  letter-spacing="1.2"
+  fill="#0B132B">
+
+  PREDICTION ACC.
+
+</text>
+
+
+<text
+  x="924"
+  y="181"
+  font-size="29"
+  font-weight="900"
+  fill="#0B132B">
+
+  93.7%
+
+</text>
+
+
+<circle
+  cx="1084"
+  cy="163"
+  r="22"
+  fill="none"
+  stroke="#0B132B"
+  stroke-opacity=".18"
+  stroke-width="5"/>
+
+
+<circle
+  cx="1084"
+  cy="163"
+  r="22"
+  fill="none"
+  stroke="#0B132B"
+  stroke-width="5"
+  stroke-dasharray="95 138"
+  transform="rotate(-90 1084 163)">
+
+  <animate
+    attributeName="stroke-dasharray"
+    values="25 138;105 138;75 138"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- PREDICTED VS ACTUAL -->
+<!-- ================================================= -->
+
+<rect
+  x="470"
+  y="222"
+  width="420"
+  height="205"
+  rx="19"
+  fill="#071022"
+  stroke="#FFFFFF"
+  stroke-opacity=".08"/>
+
+
+<text
+  x="492"
+  y="250"
+  font-family="Arial"
+  font-size="10"
+  font-weight="800"
+  letter-spacing="1.3"
+  fill="#FFFFFF">
+
+  PREDICTED VS ACTUAL
+
+</text>
+
+
+<text
+  x="492"
+  y="267"
+  font-family="Arial"
+  font-size="8"
+  fill="#71849D">
+
+  HOUSE PRICE SIGNAL
+
+</text>
+
+
+<!-- CHART GRID -->
+
+<g opacity=".12" stroke="#FFFFFF">
+
+  <line
+    x1="492"
+    y1="296"
+    x2="868"
+    y2="296"/>
+
+  <line
+    x1="492"
+    y1="332"
+    x2="868"
+    y2="332"/>
+
+  <line
+    x1="492"
+    y1="368"
+    x2="868"
+    y2="368"/>
+
+  <line
+    x1="492"
+    y1="404"
+    x2="868"
+    y2="404"/>
+
+</g>
+
+
+<!-- PRICE BARS -->
+
+<g fill="#3B5875">
+
+  <rect x="500" y="366" width="24" height="38" rx="4"/>
+  <rect x="555" y="342" width="24" height="62" rx="4"/>
+  <rect x="610" y="354" width="24" height="50" rx="4"/>
+  <rect x="665" y="315" width="24" height="89" rx="4"/>
+  <rect x="720" y="332" width="24" height="72" rx="4"/>
+  <rect x="775" y="291" width="24" height="113" rx="4"/>
+  <rect x="830" y="307" width="24" height="97" rx="4"/>
+
+</g>
+
+
+<!-- PREDICTION LINE -->
+
+<path
+  d="M512 351
+     C570 332 610 364 677 320
+     C731 286 773 329 842 281"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="3.5"
+  stroke-linecap="round"
+  stroke-dasharray="0 500">
+
+  <animate
+    attributeName="stroke-dasharray"
+    values="0 500;500 0"
+    dur="6s"
+    repeatCount="indefinite"/>
+
+</path>
+
+
+<circle
+  cx="842"
+  cy="281"
+  r="5"
+  fill="#FFFFFF"
+  filter="url(#softGlow)">
+
+  <animate
+    attributeName="r"
+    values="4;6;4"
+    dur="4s"
+    repeatCount="indefinite"/>
+
+</circle>
+
+
+<!-- LABELS -->
+
+<g
+  font-family="Arial"
+  font-size="7"
+  fill="#71849D">
+
+  <text x="500" y="417">LOW</text>
+  <text x="555" y="417">MID</text>
+  <text x="610" y="417">AVG</text>
+  <text x="665" y="417">HIGH</text>
+  <text x="720" y="417">PREM</text>
+  <text x="775" y="417">TOP</text>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- MODEL PERFORMANCE -->
+<!-- ================================================= -->
+
+<rect
+  x="906"
+  y="222"
+  width="219"
+  height="205"
+  rx="19"
+  fill="#FFFFFF"
+  fill-opacity=".055"
+  stroke="#FFFFFF"
+  stroke-opacity=".10"/>
+
+
+<text
+  x="928"
+  y="250"
+  font-family="Arial"
+  font-size="10"
+  font-weight="800"
+  letter-spacing="1.3"
+  fill="#FFFFFF">
+
+  MODEL PERFORMANCE
+
+</text>
+
+
+<!-- RINGS -->
+
+<g
+  font-family="Arial"
+  text-anchor="middle">
+
+
+<!-- R2 -->
+
+<circle
+  cx="950"
+  cy="310"
+  r="27"
+  fill="none"
+  stroke="#FFFFFF"
+  stroke-opacity=".10"
+  stroke-width="6"/>
+
+
+<circle
+  cx="950"
+  cy="310"
+  r="27"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="6"
+  stroke-dasharray="143 170"
+  transform="rotate(-90 950 310)"/>
+
+
+<text
+  x="950"
+  y="315"
+  font-size="13"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  92%
+
+</text>
+
+
+<text
+  x="950"
+  y="350"
+  font-size="7"
+  font-weight="800"
+  fill="#8EA1BB">
+
+  R² SCORE
+
+</text>
+
+
+<!-- ACCURACY -->
+
+<circle
+  cx="1018"
+  cy="310"
+  r="27"
+  fill="none"
+  stroke="#FFFFFF"
+  stroke-opacity=".10"
+  stroke-width="6"/>
+
+
+<circle
+  cx="1018"
+  cy="310"
+  r="27"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="6"
+  stroke-dasharray="137 170"
+  transform="rotate(-90 1018 310)"/>
+
+
+<text
+  x="1018"
+  y="315"
+  font-size="13"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  91%
+
+</text>
+
+
+<text
+  x="1018"
+  y="350"
+  font-size="7"
+  font-weight="800"
+  fill="#8EA1BB">
+
+  ACCURACY
+
+</text>
+
+
+<!-- FIT -->
+
+<circle
+  cx="1086"
+  cy="310"
+  r="27"
+  fill="none"
+  stroke="#FFFFFF"
+  stroke-opacity=".10"
+  stroke-width="6"/>
+
+
+<circle
+  cx="1086"
+  cy="310"
+  r="27"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="6"
+  stroke-dasharray="145 170"
+  transform="rotate(-90 1086 310)"/>
+
+
+<text
+  x="1086"
+  y="315"
+  font-size="13"
+  font-weight="900"
+  fill="#FFFFFF">
+
+  93%
+
+</text>
+
+
+<text
+  x="1086"
+  y="350"
+  font-size="7"
+  font-weight="800"
+  fill="#8EA1BB">
+
+  FIT
+
+</text>
+
+</g>
+
+
+<!-- ================================================= -->
+<!-- HOUSE VALUE ENGINE -->
+<!-- ================================================= -->
+
+<g transform="translate(1017 387)">
+
+  <path
+    d="M-28 -3
+       L0 -28
+       L28 -3
+       V25
+       H-28Z"
+    fill="none"
+    stroke="#59C3C3"
+    stroke-width="2"/>
+
+
+  <path
+    d="M-8 25
+       V7
+       H8
+       V25
+       M-20 0
+       H20"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-opacity=".8"
+    stroke-width="2"/>
+
+
+  <circle
+    cx="0"
+    cy="-28"
+    r="4"
+    fill="#59C3C3"
+    filter="url(#softGlow)">
+
+    <animate
+      attributeName="r"
+      values="3;4.5;3"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </circle>
+
+</g>
+
+
+<text
+  x="1017"
+  y="425"
+  text-anchor="middle"
+  font-family="Arial"
+  font-size="7"
+  font-weight="800"
+  letter-spacing="1"
+  fill="#8EA1BB">
+
+  HOUSE VALUE ENGINE
+
+</text>
+
+
+<!-- ================================================= -->
+<!-- CORNER ANIMATION -->
+<!-- ================================================= -->
+
+<path
+  d="M1145 455
+     H1182
+     V418"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="2.5"
+  stroke-dasharray="0 110">
+
+  <animate
+    attributeName="stroke-dasharray"
+    values="0 110;110 0"
+    dur="5s"
+    repeatCount="indefinite"/>
+
+</path>
+
+
+<path
+  d="M430 450
+     H395
+     V415"
+  fill="none"
+  stroke="#59C3C3"
+  stroke-width="2"/>
+
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<text
+  x="445"
+  y="480"
+  font-family="Arial"
+  font-size="9"
+  font-weight="700"
+  letter-spacing="1.8"
+  fill="#8EA1BB">
+
+  PYTHON • REGRESSION • FEATURE ENGINEERING • PREDICTION
+
+</text>
+
+
+<!-- SMALL ROTATING SQUARE -->
+
+<rect
+  x="1160"
+  y="150"
+  width="9"
+  height="9"
+  rx="2"
+  fill="#59C3C3">
+
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 1164.5 154.5"
+    to="360 1164.5 154.5"
+    dur="8s"
+    repeatCount="indefinite"/>
+
+</rect>
+
+
+</g>
+
+</svg>
