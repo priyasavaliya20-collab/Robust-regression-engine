@@ -34,9 +34,6 @@ The dataset contains:
 | 📄 `Part A :- Conceptual_Foundation.pdf` | Project documentation of Part A (Theory) |
 | 📄 `Part H :- Final_Analysis_Report.pdf` | Project documentation of Part H (Report) |
 
-
-
-
 ---
 
 ## 🛠️ Tools Used
@@ -221,6 +218,8 @@ lasso_grid = GridSearchCV(Lasso(), {"alpha": alphas}, cv=5, scoring="neg_mean_sq
 
 ## 📘 Part D : Cross-Validation Strategies
 
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/c80dc337-fa04-4123-96f4-f9fba673eb30" />
+
 ### 1️⃣3️⃣ Apply and compare CV techniques
 
 ```python
@@ -244,6 +243,10 @@ kfold_scores = cross_val_score(model, X_train_scaled, y_train, cv=kfold, scoring
 ---
 
 ## 🌳 Part E : Tree-Based Regression Models
+
+
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/e5dcdf69-0ffe-4374-b223-83bf201122b9" />
+
 
 ### 1️⃣5️⃣ Implement Decision Tree Regression
 
@@ -300,6 +303,10 @@ forest = RandomForestRegressor(
 
 ## ⚙️ Part F : Support Vector Regression
 
+
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/d017d447-e55d-48fb-99e1-4969a3b055b9" />
+
+
 ### 1️⃣9️⃣ Implement Support Vector Regression (Linear and RBF kernels)
 
 ```python
@@ -343,6 +350,10 @@ svr_grid = GridSearchCV(SVR(kernel="rbf"), parameters, cv=5, scoring="neg_mean_s
 ---
 
 ## 📊 Part G : Model Comparison & Evaluation
+
+
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/fffa819d-5535-4490-9aff-9c2dd2a4efa5" />
+
 
 ### 2️⃣2️⃣ Evaluate all models using regression metrics
 
