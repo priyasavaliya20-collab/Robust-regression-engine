@@ -1,4 +1,4 @@
-
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/99868f49-911d-466a-ae8f-3a906e70140e" />
 
 <img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/0fda5840-79b3-463e-80a5-62bfa432bc29" />
 
@@ -88,6 +88,10 @@ The dataset contains:
 
 ## 🧠 Part B : Dataset Understanding & Preparation
 
+
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/d6dee575-08d3-4dac-8a34-3fa26e28b85b" />
+
+
 ### 📋 Dataset Overview
 
 ```python
@@ -152,6 +156,10 @@ X_test_scaled  = scaler.transform(X_test)
 ---
 
 ## 📈 Part C : Regularized Linear Models
+
+
+<img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/99868f49-911d-466a-ae8f-3a906e70140e" />
+
 
 ### 9️⃣ Implement Ridge Regression (L2)
 
