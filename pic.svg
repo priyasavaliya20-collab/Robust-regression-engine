@@ -143,7 +143,9 @@
       opacity=".16"/>
 
 
+<!-- ================================================= -->
 <!-- MOVING LIGHT -->
+<!-- ================================================= -->
 
 <path d="M820 -100
          L900 -100
@@ -170,7 +172,7 @@
 
 <rect x="46"
       y="34"
-      width="310"
+      width="300"
       height="28"
       rx="14"
       fill="#59C3C3"
@@ -197,7 +199,7 @@
       font-weight="800"
       letter-spacing="1.8"
       fill="#BDEEEE">
-  DATA ANALYTICS • DATA PREPARATION
+  MACHINE LEARNING • REGULARIZATION
 </text>
 
 
@@ -208,51 +210,51 @@
       font-size="34"
       font-weight="900"
       fill="#FFFFFF">
-  PART B :
+  PART C :
 </text>
 
 <text x="46"
-      y="151"
-      font-size="29"
+      y="153"
+      font-size="31"
       font-weight="900"
       fill="#FFFFFF">
-  DATASET
+  REGULARIZED
 </text>
 
 <text x="46"
-      y="188"
-      font-size="29"
+      y="191"
+      font-size="31"
       font-weight="900"
       fill="#59C3C3">
-  UNDERSTANDING
+  LINEAR
 </text>
 
 <text x="46"
-      y="225"
-      font-size="29"
+      y="229"
+      font-size="31"
       font-weight="900"
       fill="#FFFFFF">
-  &amp; PREPARATION
+  MODELS
 </text>
 
 <text x="48"
-      y="252"
+      y="254"
       font-size="10"
       letter-spacing="1.35"
       fill="#B7C6D9">
-  PROFILE • CLEAN • TRANSFORM • READY
+  RIDGE • LASSO • λ PENALTY • SHRINKAGE
 </text>
 
 </g>
 
 
 <!-- ================================================= -->
-<!-- DATASET ORBIT -->
+<!-- REGULARIZATION ORBIT -->
 <!-- ================================================= -->
 
-<g transform="translate(150 337)">
+<g transform="translate(150 338)">
 
-  <circle r="66"
+  <circle r="67"
           fill="none"
           stroke="#59C3C3"
           stroke-opacity=".12"/>
@@ -262,6 +264,8 @@
           stroke="#FFFFFF"
           stroke-opacity=".12"
           stroke-dasharray="3 8"/>
+
+  <!-- ROTATING ORBIT -->
 
   <path d="M-58 0
            A58 58 0 0 1 40-42"
@@ -282,57 +286,30 @@
   </path>
 
 
-  <!-- DATA TABLE -->
+  <!-- LAMBDA SYMBOL -->
 
-  <rect x="-28"
-        y="-23"
-        width="56"
-        height="46"
-        rx="5"
-        fill="#0B132B"
-        stroke="#59C3C3"
-        stroke-width="2"/>
-
-  <line x1="-19"
-        y1="-10"
-        x2="19"
-        y2="-10"
-        stroke="#59C3C3"
-        stroke-width="2"/>
-
-  <line x1="-19"
-        y1="0"
-        x2="19"
-        y2="0"
-        stroke="#FFFFFF"
-        stroke-opacity=".55"/>
-
-  <line x1="-19"
-        y1="10"
-        x2="19"
-        y2="10"
-        stroke="#FFFFFF"
-        stroke-opacity=".55"/>
-
-  <line x1="-5"
-        y1="-10"
-        x2="-5"
-        y2="19"
-        stroke="#FFFFFF"
-        stroke-opacity=".3"/>
-
-  <line x1="8"
-        y1="-10"
-        x2="8"
-        y2="19"
-        stroke="#FFFFFF"
-        stroke-opacity=".3"/>
-
-
-  <!-- DATA NODE -->
+  <text x="0"
+        y="13"
+        text-anchor="middle"
+        font-family="Georgia, serif"
+        font-size="43"
+        font-weight="900"
+        fill="#FFFFFF">
+    λ
+  </text>
 
   <circle cx="0"
-          cy="-66"
+          cy="0"
+          r="27"
+          fill="none"
+          stroke="#59C3C3"
+          stroke-width="2"/>
+
+
+  <!-- MOVING NODE -->
+
+  <circle cx="0"
+          cy="-67"
           r="6"
           fill="#59C3C3"
           filter="url(#glow)">
@@ -362,7 +339,7 @@
       font-weight="800"
       letter-spacing="1.3"
       fill="#8EA1BB">
-  01 PROFILE
+  01 PENALTY
 </text>
 
 <text x="145"
@@ -371,16 +348,16 @@
       font-weight="800"
       letter-spacing="1.3"
       fill="#8EA1BB">
-  02 CLEAN
+  02 SHRINK
 </text>
 
-<text x="220"
+<text x="225"
       y="424"
       font-size="8.5"
       font-weight="800"
       letter-spacing="1.3"
       fill="#8EA1BB">
-  03 TRANSFORM
+  03 GENERALIZE
 </text>
 
 <rect x="48"
@@ -411,7 +388,7 @@
       font-size="8.5"
       letter-spacing="1.1"
       fill="#71849D">
-  MISSING VALUES • OUTLIERS • FEATURES • DATA QUALITY
+  OVERFITTING CONTROL • COEFFICIENT SHRINKAGE • MODEL STABILITY
 </text>
 
 </g>
@@ -507,7 +484,6 @@
       fill="#0B132B"
       fill-opacity=".72"/>
 
-
 <circle cx="475"
         cy="71"
         r="5"
@@ -530,15 +506,15 @@
       font-weight="800"
       letter-spacing="1.4"
       fill="#FFFFFF">
-  DATASET PREPARATION
+  REGULARIZATION ENGINE
 </text>
 
 
-<!-- READY -->
+<!-- ACTIVE -->
 
-<rect x="1038"
+<rect x="1028"
       y="58"
-      width="90"
+      width="100"
       height="26"
       rx="13"
       fill="#59C3C3"
@@ -546,7 +522,7 @@
       stroke="#59C3C3"
       stroke-opacity=".5"/>
 
-<circle cx="1054"
+<circle cx="1044"
         cy="71"
         r="4"
         fill="#59C3C3">
@@ -559,13 +535,13 @@
 
 </circle>
 
-<text x="1065"
+<text x="1055"
       y="75"
       font-family="Arial"
       font-size="8"
       font-weight="800"
       fill="#BDEEEE">
-  READY
+  OPTIMIZED
 </text>
 
 
@@ -591,7 +567,7 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  DATASET SIZE
+  REGULARIZATION λ
 </text>
 
 <text x="490"
@@ -599,15 +575,15 @@
       font-size="29"
       font-weight="900"
       fill="#FFFFFF">
-  4.2K
+  0.10
 </text>
 
-<text x="570"
+<text x="590"
       y="181"
       font-size="9"
       font-weight="800"
       fill="#59C3C3">
-  ROWS
+  TUNED
 </text>
 
 <rect x="490"
@@ -654,7 +630,7 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#8EA1BB">
-  MISSING VALUES
+  COEFFICIENTS
 </text>
 
 <text x="707"
@@ -662,7 +638,7 @@
       font-size="29"
       font-weight="900"
       fill="#FFFFFF">
-  0.8%
+  05
 </text>
 
 <text x="800"
@@ -670,7 +646,7 @@
       font-size="9"
       font-weight="800"
       fill="#59C3C3">
-  CLEANED
+  FEATURES
 </text>
 
 <path d="M707 193
@@ -708,7 +684,7 @@
       font-weight="800"
       letter-spacing="1.2"
       fill="#0B132B">
-  FEATURES READY
+  GENERALIZATION
 </text>
 
 <text x="924"
@@ -716,15 +692,15 @@
       font-size="29"
       font-weight="900"
       fill="#0B132B">
-  05
+  94.2%
 </text>
 
-<text x="1000"
+<text x="1020"
       y="181"
       font-size="9"
       font-weight="800"
       fill="#0B132B">
-  INPUTS
+  SCORE
 </text>
 
 <circle cx="1084"
@@ -756,7 +732,7 @@
 
 
 <!-- ================================================= -->
-<!-- DATA QUALITY ANALYSIS -->
+<!-- RIDGE vs LASSO -->
 <!-- ================================================= -->
 
 <rect x="470"
@@ -775,7 +751,7 @@
       font-weight="800"
       letter-spacing="1.3"
       fill="#FFFFFF">
-  DATA QUALITY PROFILE
+  COEFFICIENT SHRINKAGE
 </text>
 
 <text x="492"
@@ -783,7 +759,7 @@
       font-family="Arial"
       font-size="8"
       fill="#71849D">
-  FEATURE DISTRIBUTION &amp; CLEANING
+  RIDGE vs LASSO REGULARIZATION
 </text>
 
 
@@ -815,60 +791,48 @@
 </g>
 
 
-<!-- DATA BARS -->
+<!-- RIDGE BARS -->
 
 <g fill="#3B5875">
 
-  <rect x="500"
-        y="350"
+  <rect x="505"
+        y="320"
         width="30"
-        height="54"
+        height="84"
         rx="4"/>
 
-  <rect x="552"
-        y="325"
+  <rect x="560"
+        y="337"
         width="30"
-        height="79"
+        height="67"
         rx="4"/>
 
-  <rect x="604"
+  <rect x="615"
+        y="351"
+        width="30"
+        height="53"
+        rx="4"/>
+
+  <rect x="670"
         y="365"
         width="30"
         height="39"
         rx="4"/>
 
-  <rect x="656"
-        y="305"
+  <rect x="725"
+        y="377"
         width="30"
-        height="99"
-        rx="4"/>
-
-  <rect x="708"
-        y="342"
-        width="30"
-        height="62"
-        rx="4"/>
-
-  <rect x="760"
-        y="290"
-        width="30"
-        height="114"
-        rx="4"/>
-
-  <rect x="812"
-        y="318"
-        width="30"
-        height="86"
+        height="27"
         rx="4"/>
 
 </g>
 
 
-<!-- CLEANING LINE -->
+<!-- LASSO LINE -->
 
-<path d="M515 341
-         C565 330 610 351 671 315
-         C720 285 765 322 825 278"
+<path d="M520 300
+         C570 316 610 340 650 356
+         C700 375 750 392 825 402"
       fill="none"
       stroke="#59C3C3"
       stroke-width="3.5"
@@ -884,11 +848,26 @@
 </path>
 
 
+<!-- COEFFICIENT DOTS -->
+
+<circle cx="520"
+        cy="300"
+        r="5"
+        fill="#FFFFFF"
+        filter="url(#softGlow)"/>
+
+<circle cx="650"
+        cy="356"
+        r="5"
+        fill="#59C3C3"
+        filter="url(#softGlow)"/>
+
 <circle cx="825"
-        cy="278"
+        cy="402"
         r="5"
         fill="#FFFFFF"
         filter="url(#softGlow)">
+
 
   <animate
     attributeName="r"
@@ -905,19 +884,17 @@
    font-size="7"
    fill="#71849D">
 
-  <text x="500" y="417">AREA</text>
-  <text x="552" y="417">BED</text>
-  <text x="604" y="417">BATH</text>
-  <text x="656" y="417">LOC</text>
-  <text x="708" y="417">AGE</text>
-  <text x="760" y="417">PRICE</text>
-  <text x="812" y="417">SCORE</text>
+  <text x="505" y="417">β1</text>
+  <text x="560" y="417">β2</text>
+  <text x="615" y="417">β3</text>
+  <text x="670" y="417">β4</text>
+  <text x="725" y="417">β5</text>
 
 </g>
 
 
 <!-- ================================================= -->
-<!-- PREPARATION STATUS -->
+<!-- MODEL CONTROL -->
 <!-- ================================================= -->
 
 <rect x="906"
@@ -937,104 +914,110 @@
       font-weight="800"
       letter-spacing="1.3"
       fill="#FFFFFF">
-  PREPARATION STATUS
+  MODEL CONTROL
 </text>
 
 
-<!-- STATUS ITEMS -->
+<!-- RIDGE -->
 
 <g font-family="Arial">
 
-  <circle cx="936"
-          cy="282"
-          r="5"
-          fill="#59C3C3"/>
+<circle cx="936"
+        cy="282"
+        r="5"
+        fill="#59C3C3"/>
 
-  <text x="950"
-        y="286"
-        font-size="8"
-        font-weight="700"
-        fill="#FFFFFF">
-    DUPLICATES
-  </text>
+<text x="950"
+      y="286"
+      font-size="8"
+      font-weight="700"
+      fill="#FFFFFF">
+  RIDGE
+</text>
 
-  <text x="1090"
-        y="286"
-        text-anchor="end"
-        font-size="8"
-        font-weight="800"
-        fill="#59C3C3">
-    CLEAN
-  </text>
-
-
-  <circle cx="936"
-          cy="316"
-          r="5"
-          fill="#59C3C3"/>
-
-  <text x="950"
-        y="320"
-        font-size="8"
-        font-weight="700"
-        fill="#FFFFFF">
-    MISSING DATA
-  </text>
-
-  <text x="1090"
-        y="320"
-        text-anchor="end"
-        font-size="8"
-        font-weight="800"
-        fill="#59C3C3">
-    HANDLED
-  </text>
+<text x="1090"
+      y="286"
+      text-anchor="end"
+      font-size="8"
+      font-weight="800"
+      fill="#59C3C3">
+  L2 PENALTY
+</text>
 
 
-  <circle cx="936"
-          cy="350"
-          r="5"
-          fill="#59C3C3"/>
+<!-- LASSO -->
 
-  <text x="950"
-        y="354"
-        font-size="8"
-        font-weight="700"
-        fill="#FFFFFF">
-    OUTLIERS
-  </text>
+<circle cx="936"
+        cy="316"
+        r="5"
+        fill="#59C3C3"/>
 
-  <text x="1090"
-        y="354"
-        text-anchor="end"
-        font-size="8"
-        font-weight="800"
-        fill="#59C3C3">
-    CHECKED
-  </text>
+<text x="950"
+      y="320"
+      font-size="8"
+      font-weight="700"
+      fill="#FFFFFF">
+  LASSO
+</text>
+
+<text x="1090"
+      y="320"
+      text-anchor="end"
+      font-size="8"
+      font-weight="800"
+      fill="#59C3C3">
+  L1 PENALTY
+</text>
 
 
-  <circle cx="936"
-          cy="384"
-          r="5"
-          fill="#59C3C3"/>
+<!-- OVERFIT -->
 
-  <text x="950"
-        y="388"
-        font-size="8"
-        font-weight="700"
-        fill="#FFFFFF">
-    FEATURES
-  </text>
+<circle cx="936"
+        cy="350"
+        r="5"
+        fill="#59C3C3"/>
 
-  <text x="1090"
-        y="388"
-        text-anchor="end"
-        font-size="8"
-        font-weight="800"
-        fill="#59C3C3">
-    READY
-  </text>
+<text x="950"
+      y="354"
+      font-size="8"
+      font-weight="700"
+      fill="#FFFFFF">
+  OVERFITTING
+</text>
+
+<text x="1090"
+      y="354"
+      text-anchor="end"
+      font-size="8"
+      font-weight="800"
+      fill="#59C3C3">
+  CONTROLLED
+</text>
+
+
+<!-- COMPLEXITY -->
+
+<circle cx="936"
+        cy="384"
+        r="5"
+        fill="#59C3C3"/>
+
+<text x="950"
+      y="388"
+      font-size="8"
+      font-weight="700"
+      fill="#FFFFFF">
+  COMPLEXITY
+</text>
+
+<text x="1090"
+      y="388"
+      text-anchor="end"
+      font-size="8"
+      font-weight="800"
+      fill="#59C3C3">
+  REDUCED
+</text>
 
 </g>
 
@@ -1051,14 +1034,14 @@
 
 <rect x="928"
       y="405"
-      width="128"
+      width="132"
       height="4"
       rx="2"
       fill="#59C3C3">
 
   <animate
     attributeName="width"
-    values="70;155;128"
+    values="65;155;132"
     dur="5s"
     repeatCount="indefinite"/>
 
@@ -1104,7 +1087,7 @@
       font-weight="700"
       letter-spacing="1.8"
       fill="#8EA1BB">
-  DATA PROFILING • CLEANING • OUTLIER CHECK • FEATURE PREPARATION
+  RIDGE • LASSO • λ TUNING • COEFFICIENT SHRINKAGE • GENERALIZATION
 </text>
 
 
