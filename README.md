@@ -4,7 +4,7 @@
 ## 🎯 Objective
 
 
-<img width="1200" height="600" alt="ezgif-7e4b5bb45b770ba1" src="https://github.com/user-attachments/assets/c3eef053-28a0-4593-aa11-bf69c7b5e350" />
+<img width="1200" height="650" alt="ezgif-7e4b5bb45b770ba1" src="https://github.com/user-attachments/assets/c3eef053-28a0-4593-aa11-bf69c7b5e350" />
 
 
 ---
