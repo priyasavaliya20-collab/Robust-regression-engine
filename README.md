@@ -1,10 +1,21 @@
 
-
 <img width="1200" height="500" alt="pic" src="https://github.com/user-attachments/assets/0fda5840-79b3-463e-80a5-62bfa432bc29" />
 
 ## 🎯 Objective
 
-This project evaluates understanding of advanced supervised learning regression techniques, with a strong focus on **regularization, model generalization, cross-validation strategies, and tree-based regression algorithms**. It shows how to control overfitting, select optimal models, and compare linear vs non-linear regressors on real-world data.
+
+<img width="800" height="450" alt="ezgif-7e4b5bb45b770ba1" src="https://github.com/user-attachments/assets/c3eef053-28a0-4593-aa11-bf69c7b5e350" />
+
+
+---
+
+## ♻️ WorkFlow
+
+<img width="800" height="450" alt="ezgif-759e434ded900806" src="https://github.com/user-attachments/assets/65815323-a879-4b13-8d59-d286f321ef0b" />
+
+
+
+
 
 ---
 
@@ -58,7 +69,7 @@ The dataset contains:
 
 ## 🎬 Project Demo
 
-[![Watch Demo](https://img.shields.io/badge/Watch%20Demo-click%20to%20view-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1MEAgSbSA8h0QoAyszYPEHOarAVSm7ZeJ/view?usp=sharing)
+[![Watch Demo](https://img.shields.io/badge/Watch%20Demo-click%20to%20view-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1pYHeKxMDf2fWG_HQ8d7azHstZ1XleWEh/view?usp=sharing)
 
 📹 Click on the badge to watch the video.
 
