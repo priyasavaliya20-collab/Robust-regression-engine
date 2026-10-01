@@ -11,7 +11,7 @@
 
 ## ♻️ WorkFlow
 
-<img width="800" height="450" alt="ezgif-759e434ded900806" src="https://github.com/user-attachments/assets/65815323-a879-4b13-8d59-d286f321ef0b" />
+<img width="1200" height="650" alt="ezgif-759e434ded900806" src="https://github.com/user-attachments/assets/65815323-a879-4b13-8d59-d286f321ef0b" />
 
 
 
